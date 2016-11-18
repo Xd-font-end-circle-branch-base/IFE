@@ -8,7 +8,7 @@
 
 - 本次学习交流基于百度前端学院持续时间大约一个半月左右：[百度前端学院任务](http://ife.baidu.com/task/all)
 
-- 本次由于人数问题，每人把项目`fork`一下，创建一个自己的文件夹，可以是常用昵称或是名字简拼，比如：`damonare`,`tjz`。写完之后自己提`pull request`到`Xd-font-end-circle-branch-base`(相当于交作业)，我和卢睿韬同学会看下并给出建议。
+- 每人把项目`fork`一下，创建一个自己的文件夹，可以是常用昵称或是名字简拼，比如：`damonare`,`tjz`。写完之后自己提`pull request`到`Xd-font-end-circle-branch-base`(相当于交作业)，我和卢睿韬同学会看下并给出建议。
 
 ---
 
