@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>1</title>
+    </head>
+<body>
+    <label>输入今天的天气：
+        <input type="text"  id="input" />
+    </label>
+    <button id="btn">确认</button>
+    <div>
+        您输入的值是:
+        <span id="text_display">还没有输入</span>
+    </div>
+    <script>
+    window.onload=function(){
+        var input=document.getElementById('input'),
+            btn=document.getElementById('btn'),
+            display=document.getElementById("text_display");
+
+        btn.onclick=function(){
+            var text=input.value;
+            display.innerHTML=text;
+        }
+    }
+    </script>
+</body>
+
+</html>
