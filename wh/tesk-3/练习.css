@@ -1,0 +1,54 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	font-family:Verdana, Geneva, sans-serif;
+	
+	margin:0;
+}
+#all{
+	padding:20px;
+	margin:20px;
+	background:#eee;
+	border:#999 solid 1px;
+	overflow:auto;
+}
+#zuo{
+	float:left;
+	padding:20px;
+	width:200px;
+	background:#FFF;
+	border:solid 1px #999;
+}
+#you{
+	
+	float:right;
+	width:120px;
+	background:#FFF;
+	border:solid 1px #999;
+}
+#zhong{
+	margin-left:260px;
+	margin-right:140px;
+	background:#FFF;
+	padding:20px;
+	border:solid 1px #999;
+}
+#logo{
+	float:left;
+	border:solid 1px #999;
+}
+#name{
+	text-align:center;
+	font-weight:bold;
+	font-size:14px;
+	position:relative;
+	top:-10px;
+	
+}
+.xiao{
+	display:block;
+	border:solid 1px #999;
+	margin:20px;
+}
+
+
