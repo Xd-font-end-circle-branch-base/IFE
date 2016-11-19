@@ -1,0 +1,124 @@
+<!DOCTYPE>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>IFE JavaScript Task 01</title>
+</head>
+
+<body>
+
+    <ul id="source">
+        <li>呼和浩特空气质量：<b>90</b></li>
+        <li>拉斯维加斯空气质量：<b>70</b></li>
+        <li>石家庄空气质量：<b>80</b></li>
+        <li>哈尔滨空气质量：<b>50</b></li>
+        <li>六盘水空气质量：<b>40</b></li>
+        <li>贵阳市空气质量：<b>32</b></li>
+        <li>张家界空气质量：<b>90</b></li>
+    </ul>
+
+    <ul id="resort">
+        <!--
+    <li>第一名：北京空气质量：<b>90</b></li>
+    <li>第二名：北京空气质量：<b>90</b></li>
+    <li>第三名：北京空气质量：<b>90</b></li>
+     -->
+
+    </ul>
+
+    <button id="sort-btn">排序</button>
+
+    <script type="text/javascript">
+        /**
+         * getData方法
+         * 读取id为source的列表，获取其中城市名字及城市对应的空气质量
+         * 返回一个数组，格式见函数中示例
+         */
+        function getData() {
+            /*
+            coding here
+            */
+            var source=document.getElementById('source');
+            var data=[];
+            var sourceList=source.getElementsByTagName('li');
+            var numberList=source.getElementsByTagName('b');
+
+            for(var i=0;i<sourceList.length;i++){
+                //获取每一行的text
+                var text=sourceList[i].innerHTML;
+                //获取想要得到数据的位置
+                var first_str=text.indexOf("空气");
+                var first_num=text.indexOf(">");
+                var end_num=text.lastIndexOf("<");
+                //获取目标数据
+                var city=text.slice(0,first_str);
+                var number=text.slice(first_num+1,end_num);
+                //装入data
+                data.splice(i,0,[city,number]);
+            }
+            /*
+            data = [
+              ["北京", 90],
+              ["北京", 90]
+              ……
+            ]
+            */
+            return data;
+
+        }
+
+        /**
+         * sortAqiData
+         * 按空气质量对data进行从小到大的排序
+         * 返回一个排序后的数组
+         */
+        function sortAqiData(data) {
+
+            data.sort(compare(1));
+            function compare(second){
+                return function(obj1,obj2){
+                    var v1=obj1[second];
+                    var v2=obj2[second];
+                    return v1-v2;
+                }
+            }
+            console.log(data);
+            return data;
+        }
+
+        /**
+         * render
+         * 将排好序的城市及空气质量指数，输出显示到id位resort的列表中
+         * 格式见ul中的注释的部分
+         */
+        function render(data) {
+            var resort=document.getElementById('resort');
+            resort.innerHTML="";
+            for(var i=0;i<data.length;i++){
+                //数字转化就懒得写了
+                resort.innerHTML+="<li>第"+(i+1)+"名："+data[i][0]+"空气质量："
+                                                 +"<b>"+data[i][1]+"</b>";
+            }
+        }
+
+        function btnHandle() {
+            var aqiData = getData();
+            aqiData = sortAqiData(aqiData);
+            render(aqiData);
+        }
+
+
+        function init() {
+            var btn=document.getElementById('sort-btn');
+            btn.onclick=function(){
+                btnHandle();
+            }
+            // 在这下面给sort-btn绑定一个点击事件，点击时触发btnHandle函数
+        }
+        getData();
+        init();
+    </script>
+</body>
+
+</html>
