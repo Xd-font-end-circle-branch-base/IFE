@@ -73,8 +73,7 @@ $ cd /c/Users/name/IFE
 ```git
 $ git add *
 $ git commit -m 'explain'
-$ git push  -u origin master
-# 之后推送时用：$ git push origin master
+$ git push origin master
 ```
 
 
