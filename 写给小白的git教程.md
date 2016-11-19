@@ -59,7 +59,7 @@ $ git clone git@github.com:damonare/IFE-1.git
 
 现在你已经成功clone了自己github账号下面的文件到本地，两者已经相连了，在这里做的改动可以推送到你的仓库里，再推送到主仓库中。
 
-在这里创建你的文件夹，名字可以是你的昵称，放入一个文件。之后在git bash里执行命令准备推送。
+在这里创建你的文件夹，名字可以是你的昵称，放入一个文件，例如：`index.html`。之后在git bash里执行命令准备推送。
 
 首先，使用cd命令进入你的仓库文件夹，可以使用cd +复制的目录。
 
@@ -84,7 +84,7 @@ $ git push  -u origin master
 
 接着我们来把你的仓库推送到主仓库：
 
-点击New pull request按钮，在跳转的页面再点绿色按钮。
+点击New pull request按钮，在跳转的页面再点绿色按钮create pull request。
 
 管理员通过之后就合并成功了。
 
