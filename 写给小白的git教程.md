@@ -58,17 +58,24 @@ $ git clone git@github.com:damonare/IFE-1.git
 
 ### 推送commit
 
-现在你已经成功clone了自己github账号下面的文件到本地，然后在这里创建你的文件夹，之后在git bash里执行命令准备上传。
+现在你已经成功clone了自己github账号下面的文件到本地，两者已经相连了，在这里做的改动可以推送到你的仓库里，再推送到主仓库中。
 
-首先，使用cd命令进入你的仓库文件夹，可以使用cd +复制的目录，回车后应该能够看到进入了文件夹。
+在这里创建你的文件夹，名字可以是你的昵称，之后在git bash里执行命令准备推送。
 
-然后上传本地文件到你的仓库，使用以下命令：
+首先，使用cd命令进入你的仓库文件夹，可以使用cd +复制的目录。
+
+例子：
+```git
+$ cd /c/Users/name/IFE
+```
+
+进入你的文件夹，然后推送本地文件到你的仓库，使用以下命令：
 
 ```git
 $ git add *
 $ git commit -m 'explain'
-
 $ git push  -u origin master
+
 （之后推送时用：$ git push origin master）
 ```
 
