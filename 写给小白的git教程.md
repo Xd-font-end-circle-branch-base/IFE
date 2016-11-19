@@ -61,7 +61,7 @@ $ git clone git@github.com:damonare/IFE-1.git
 
 在这里创建你的文件夹，名字可以是你的昵称，放入一个文件，例如：`index.html`。之后在git bash里执行命令准备推送。
 
-首先，使用cd命令进入你的仓库文件夹，可以使用cd +复制的目录。
+首先，使用cd命令进入你的仓库文件夹，可以使用cd +复制的目录。或是在当前文件夹下面直接`git bash here`
 
 例子：
 ```git
@@ -73,8 +73,7 @@ $ cd /c/Users/name/IFE
 ```git
 $ git add *
 $ git commit -m 'explain'
-$ git push  -u origin master
-# 之后推送时用：$ git push origin master
+$ git push origin master
 ```
 
 
