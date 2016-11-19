@@ -1,5 +1,4 @@
 ### 申请github账号篇
-
 ---
 
 - **首先你得有github账号，这个问题不难解决，到<a>http://github.com</a>注册一个账号就行**
@@ -46,8 +45,8 @@ OK！下载完成！重新安装，一直点next就好。安装好了切换到�
 
 OK！打开你的`git-bash`,在任意文件夹下面，输入
 
+下面的damonare是我的昵称，在你克隆的时候要换成你的githun账号路径
 ```git
-# damonare是我的昵称，在你克隆的时候要换成你的githun账号路径
 $ git clone git@github.com:damonare/IFE-1.git
 ```
 
@@ -58,20 +57,36 @@ $ git clone git@github.com:damonare/IFE-1.git
 
 ### 推送commit
 
-现在你已经成功clone了自己github账号下面的文件到本地，在文件夹下打开`git-bash` 提交你更改后的文件（第一次应该先推送一个你自己创建的文件夹，见README说明），一次执行以下命令：
+现在你已经成功clone了自己github账号下面的文件到本地，两者已经相连了，在这里做的改动可以推送到你的仓库里，再推送到主仓库中。
+
+在这里创建你的文件夹，名字可以是你的昵称，放入一个文件。之后在git bash里执行命令准备推送。
+
+首先，使用cd命令进入你的仓库文件夹，可以使用cd +复制的目录。
+
+例子：
+```git
+$ cd /c/Users/name/IFE
+```
+
+进入你的文件夹，然后推送本地文件到你的仓库，使用以下命令：
 
 ```git
-# git add *
-# git commit -m 'explain'
-# 首次推送：
+$ git add *
+$ git commit -m 'explain'
 $ git push  -u origin master
-# 之后推送：
-$ git push origin master
+# 之后推送时用：$ git push origin master
 ```
+
 
 ![这里写图片描述](http://img.blog.csdn.net/20161118174647342)
 
-推送成功后觉得任务写的没问题了就可以提个pull request,就是github账号页面那个New pull request按钮。
+成功后在即把本地所有文件推送到你的的仓库里，你能够在github中你的仓库里看到所有文件包括你新添加的文件夹。
+
+接着我们来把你的仓库推送到主仓库：
+
+点击New pull request按钮，在跳转的页面再点绿色按钮。
+
+管理员通过之后就合并成功了。
 
 ### 后记
 
