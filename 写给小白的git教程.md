@@ -67,8 +67,8 @@ $ git clone git@github.com:damonare/IFE-1.git
 ```git
 $ git add *
 $ git commit -m 'explain'
-$ git push  -u origin master
 
+$ git push  -u origin master
 （之后推送时用：$ git push origin master）
 ```
 
