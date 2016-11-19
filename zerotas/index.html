@@ -5,27 +5,36 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
 <head>
 <title>task1</title>
 <meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="index.css">
 </head>
 <body>
-<h1>网站一级标题</h1>
+
+<div id="top" class="top">
+<!--<h1>网站一级标题</h1> -->
+
 <ul>
 	<li><a href="">导航链接一</a></li>
 	<li><a href="">导航链接二</a></li>
 	<li><a href="">导航链接三</a></li>
-	<li><a href="">导航链接四</a></li>
+	<li><a href="" id="link4">导航链接四</a></li>
 </ul>
 
+</div>
+
+<div id="text1" class="text1">
 <h2>文章一级标题</h2>
-<h2>文章二级标题</h2>
-<p>文章作者 文章发表时间</p>
+<h3>文章二级标题</h3>
+<p id="author">文章作者 文章发表时间</p>
 <p>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，<br />换行了<br />这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，换行了<br />这是一个很长很长的段落，这是一个很长很长的段落，<a href="http://ife.baidu.com">这里又一个链接链接到http://ife.baidu.com</a>这是一个很长很长的段落，这是一个很长很长的段落，<b>这里有个粗体字</b>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落。</p>
 
 <img src="picture.jpg" style="width:500px;height:300px" alt="desktop"><br />
 <p>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，换行了<br />这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，<b>这里有个粗体字</b>这是一个很长很长的段落，这是一个很长很长的段落，<a href="http://ife.baidu.com" target="_blank">这里有一个链接点击后打开新窗口链接到http://ife.baidu.com</a>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，</p>
+</div>
 
+<div id="text2" class="text">
 <h2>另一篇文章的一级标题</h2>
-<h2>春晓</h2>
-<p>孟浩然 文章发表时间 未知</p>
+<h3>春晓</h3>
+<p id="author">孟浩然 文章发表时间 未知</p>
 <pre>
 	春眠不觉晓，
 	  处处闻啼鸟。
@@ -38,92 +47,124 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
 	<li>列表项目二</li>
 	<li>列表项目三</li>
 </ul>
-<h2>图片</h2>
-<p>好看的图片</p><br />
-<img src="picture.jpg" style="width:500px;height:300px" alt="desktop"><br />
-<p>好看的图片</p><br />
-<img src="picture.jpg" style="width:500px;height:300px" alt="desktop"><br />
-<p>好看的图片</p><br />
-<img src="picture.jpg" style="width:500px;height:300px" alt="desktop"><br />
-<p>好看的图片</p><br />
-<img src="picture.jpg" style="width:500px;height:300px" alt="desktop"><br />
-<p>好看的图片</p><br />
-<img src="picture.jpg" style="width:500px;height:300px" alt="desktop"><br />
-<p>好看的图片</p><br />
-<img src="picture.jpg" style="width:500px;height:300px" alt="desktop"><br />
-<p>好看的图片</p><br />
-<img src="picture.jpg" style="width:500px;height:300px" alt="desktop"><br />
-<p>好看的图片</p><br />
-<img src="picture.jpg" style="width:500px;height:300px" alt="desktop"><br />
-<p>好看的图片</p><br />
-<img src="picture.jpg" style="width:500px;height:300px" alt="desktop"><br />
-<p>好看的图片</p><br />
-<img src="picture.jpg" style="width:500px;height:300px" alt="desktop"><br />
+</div>
 
+<div id="picture">
+<h2>图片</h2>
+<div class="mix">
+	<p>好看的图片</p><br />
+	<img src="picture.jpg" style="width:200px;height:150px" alt="desktop">
+</div>
+<div class="mix">
+	<p>好看的图片</p><br />
+	<img src="picture.jpg" style="width:200px;height:150px" alt="desktop">
+</div>
+<div class="mix">
+	<p>好看的图片</p><br />
+	<img src="picture.jpg" style="width:200px;height:150px" alt="desktop">
+</div>
+<div class="mix">
+	<p>好看的图片</p><br />
+	<img src="picture.jpg" style="width:200px;height:150px" alt="desktop">
+</div>
+<div class="mix">
+	<p>好看的图片</p><br />
+	<img src="picture.jpg" style="width:200px;height:150px" alt="desktop">
+</div>
+<div class="mix">
+	<p>好看的图片</p><br />
+	<img src="picture.jpg" style="width:200px;height:150px" alt="desktop">
+</div>
+<div class="mix">
+	<p>好看的图片</p><br />
+	<img src="picture.jpg" style="width:200px;height:150px" alt="desktop">
+</div>
+<div class="mix">
+	<p>好看的图片</p><br />
+	<img src="picture.jpg" style="width:200px;height:150px" alt="desktop">
+</div>
+<div class="mix">
+	<p>好看的图片</p><br />
+	<img src="picture.jpg" style="width:200px;height:150px" alt="desktop">
+</div>
+<div class="mix">
+	<p>好看的图片</p><br />
+	<img src="picture.jpg" style="width:200px;height:150px" alt="desktop">
+</div>
+</div>
+
+<div id="text3" class="text">
 <h2>最后一篇文章的一级标题</h2>
-<h2>文章的二级标题</h2>
-<p>文章作者 文章发表时间</p>
+<h3>文章的二级标题</h3>
+<p id="author">文章作者 文章发表时间</p>
 <ol>
 	<li>排名1</li>
 	<li>排名2</li>
 	<li>排名3</li>
 </ol>
-<p>下面是一个表格，给表格加了个border="1"好让你看出是一个表格</p>
-<table border="1">
-	<tr>
-    	<th>表头</th>
-    	<th>表头</th>
-    	<th>表头</th>
+
+<table border="1" width="100%">
+	<tr id="head" class="box">
+    	<th id="col1">表头</th>
+    	<th id="col2">表头</th>
+    	<th id="col3">表头</th>
 	</tr>
 
-	<tr>
+	<tr class="box">
 		<td>表内容单元格</td>
 		<td>表内容单元格</td>
 		<td><a >操作</a></td>
 	</tr>
-	<tr>
+	<tr class="box">
 		<td>表内容单元格</td>
 		<td>表内容单元格</td>
 		<td><a href="">操作</a></td>
 	</tr>
-	<tr>
+	<tr class="box">
 		<td>表内容单元格</td>
 		<td>表内容单元格</td>
 		<td><a href="">操作</a></td>
 	</tr>
-	<tr>
+	<tr class="box">
 		<td>表内容单元格</td>
 		<td>表内容单元格</td>
 		<td><a href="">操作</a></td>
 	</tr>
-	<tr>
+	<tr class="box">
 		<td>表内容单元格</td>
 		<td>表内容单元格</td>
 		<td><a href="">操作</a></td>
 	</tr>
-	<tr>
+	<tr id="tail" class="box">
 		<td>总计</td>
-		<td>1000</td>
+		<td id="total" colspan="2">1000</td>
 	</tr>
 
 </table>
+</div>
 
+<div id="sidebar" class="sidebar">
 <h2>这里以后是一个侧栏，这是侧栏的标题</h2>
-<h2>侧栏注册窗口的标题</h2>
+<h3>侧栏注册窗口的标题</h3>
 <form method="post">
 	请输入邮箱地址：<input type="text" placeholder="这是一个文本你输入框" autofocus="autofocus">
-	<p>邮箱地址请按要求格式输入</p>
-	请输入密码：<input type="password" placeholder="这是一个文本你输入框" pattern="[a-z][A-Z][0-9]" autofocus="autofocus">请重复输入密码：<input type="password" placeholder="这是一个文本你输入框" pattern="[a-z][A-Z][0-9]" autofocus="autofocus">
-	<p>密码请为6-16位英文数字</p>
-	性别：<input type="radio" checked="checked" name="Sex" value="男" /><input type="radio" checked="checked" name="Sex" value="女" />
-	城市：<select name="city">
+	<p class="tips">邮箱地址请按要求格式输入</p>
+	<p>请输入密码：<input type="password" placeholder="这是一个文本你输入框" pattern="[a-z][A-Z][0-9]" autofocus="autofocus"></p>
+	<p>请重复输入密码：<input type="password" placeholder="这是一个文本你输入框" pattern="[a-z][A-Z][0-9]" autofocus="autofocus"></p>
+	<p class="tips">密码请为6-16位英文数字</p>
+	<p>性别：<input type="radio" checked="checked" name="Sex" value="男" class="choice" />男<input type="radio" checked="checked" name="Sex" value="女" class="choice" />女</p>
+	<p>城市：<select name="city">
 			<option value="上海">Volvo</option>
 			<option value="广州">Saab</option>
 			<option value="北京" selected="selected">Fiat</option>
 			<option value="成都">Audi</option>
-		 </select>
-	爱好:<input type="checkbox" name="sports">运动&nbsp<input type="checkbox" name="art">艺术&nbsp<input type="checkbox" name="science">艺术
-	个人描述：<textarea rows="2" cols="24">这是一个多行输入框，输入您的个人描述</textarea><input type="submit" value="确认提交">
+		 </select></p>
+	<p>爱好:<input type="checkbox" name="sports">运动&nbsp<input type="checkbox" name="art">艺术&nbsp<input type="checkbox" name="science">艺术</p>
+	<p>个人描述：<textarea>这是一个多行输入框，输入您的个人描述</textarea></p> 
+	<input type="submit" value="确认提交" id="Submit">
 </form>
+</div>
+
+
 </body>
 </html>

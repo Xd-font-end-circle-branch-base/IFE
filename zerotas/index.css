@@ -1,0 +1,94 @@
+body{
+	background-color: grey;
+	font-family: serif;
+}
+div#top{
+	background-color: #191970;
+	
+	height:50px;
+	margin:0 10px;
+}
+.top ul{
+	float: right;
+}
+.top li{
+	float:left;
+	margin:0 10px;
+}
+.top a{
+	text-decoration: none;
+	color: #fff;
+}
+.top a#link4{
+	color:#ccc;
+}
+
+.text h3{
+	color:grey;
+}
+.text p#author{
+	color:grey;
+}
+div.text1{
+	margin: 0px 10px 10px 10px;
+	background-color: white;
+	padding:30px 30px 30px 30px;
+}
+div.text{
+	margin: 10px 10px 10px 10px;
+	background-color: white;
+	padding:30px 30px 30px 30px;
+}
+div#picture{
+	margin:10px;
+	padding:30px;
+	background-color: white;
+}
+
+div#sidebar{
+	margin: 10px 10px 10px 10px;
+	background-color: white;
+	padding:30px 30px 30px 30px;
+}
+pre.text{
+	text-decoration: blink;
+}
+div.mix{
+	border-style: solid;
+	margin:80px 20px 80px 20px;
+	padding: 10px 10px 10px 10px;
+	border-width: thin;
+	width:250px;
+	text-align: center;
+}
+.box th{
+	background-color: #000;
+	color:#fff;
+}
+table{
+	width:100%;
+	border-collapse: collapse;
+	border:1px solid grey;
+}
+tr#tail{
+	background-color: grey;
+}
+form{
+	text-indent:25%;
+}
+p.tips{
+	color:grey;
+}
+input#Submit{
+	width:94%;
+	border-radius: 10px;
+	color:#fff;
+	background-color: blue;
+	height: 40px;
+}
+textarea{
+	height:150px;
+	width:730px;
+	float:right;
+	margin:-5px 250px 20px 0px;
+}
