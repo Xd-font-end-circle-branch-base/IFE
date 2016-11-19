@@ -65,8 +65,8 @@ $ git clone git@github.com:damonare/IFE-1.git
 然后上传本地文件到你的仓库，使用以下命令：
 
 ```git
- git add *
- git commit -m 'explain'
+$ git add *
+$ git commit -m 'explain'
 $ git push  -u origin master
 
 （之后推送时用：$ git push origin master）
