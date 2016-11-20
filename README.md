@@ -1,6 +1,7 @@
 ## 西电前端圈-基础篇
 
 ---
+- 代码规范参照：[腾讯alloyteam院队](http://alloyteam.github.io/CodeGuide/)
 
 - 本次学习交流使用git作为版本管理工具，代码托管在github
 
