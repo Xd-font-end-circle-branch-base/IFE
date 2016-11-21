@@ -1,1 +1,0 @@
-(function(n,t,i){if(t){var r=!1,u=function(){r||(r=!0,typeof wlc!="undefined"&&wlc(sj_evt,sj_cook.set,wlc_t))},f=function(){var i=setTimeout(u,t);n.bind("fb:connecting",function(){clearTimeout(i);n.bind("fb:connected",u,1)},1)};n.bind("onP1",function(){i?n.bind("aad:signedout",f):f()},1)}})(sj_evt,wlc_d,wlc_wfa)
