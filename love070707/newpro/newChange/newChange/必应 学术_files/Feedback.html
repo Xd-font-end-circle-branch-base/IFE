@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<!-- saved from url=(0191)https://interaction.chinacloudsites.cn/Academic/Feedback?msid=&url=http%3a%2f%2fcn.bing.com%2facademic%2fprofile%3fid%3d2146436343%26FORM%3dQBRE%26encoded%3d0&et=profile&iframeId=-27405654365 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta baidu-gxt-verify-token="f86fb59bd7e478f761d443a0d75447f1">
+    <title>反馈 - 必应互动</title>
+    <link href="./css" rel="stylesheet">
+
+    
+    <script type="text/javascript">
+    var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+    document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F2b3aa853d8627a2fc22fd57cbb0ef31a' type='text/javascript'%3E%3C/script%3E"));
+    </script><script src="./h.js" type="text/javascript"></script>
+    <style>
+        .bodystyle {
+            background-color:transparent;
+            padding:0;
+        }
+    </style>
+</head><style type="text/css" id="720324543"></style>
+
+<body class="bodystyle">
+    <script src="./jquery"></script>
+
+    <script src="./bootstrap"></script>
+
+    
+
+
+<script type="text/javascript" src="./Feedback.js"></script>
+<link rel="stylesheet" href="./Feedback.css">
+
+        <link rel="stylesheet" href="./Feedback_Profile.css">
+
+
+<style>
+    .cmtbtn {
+        background-color: #0273c5;
+        color: #fff;
+        font-size: 13px;
+        font-weight: 600;
+        height: 25px;
+        line-height: 25px;
+        padding: 0px 12px;
+        margin: 10px 0 0;
+        width: 80px;
+        cursor: pointer;
+    }
+
+    .fb_input {
+        position: relative;
+    }
+
+    #comment_placeholder,
+    #contact_placeholder {
+        display: none;
+        top: 0;
+        left: 3px;
+        color: #bababa;
+        position: absolute;
+        font-size: 13px;
+        padding: 5px 0 0 5px;
+    }
+</style>
+<form id="academicfeedbackform" role="form" action="https://interaction.chinacloudsites.cn/Academic/AddFeedback" method="post" enctype="multipart/form-data">
+    <div id="academicfeedback">
+        <div class="title">意见反馈</div>
+        <div class="fb_input">
+            <textarea id="cmttext" name="cmttext" class="cmtarea" maxlength="1024" placeholder="欢迎提出您在使用过程中遇到的任何问题或意见,您的反馈是我们持续改进的动力!(512字以内)"></textarea>
+            <label id="comment_placeholder">欢迎提出您在使用过程中遇到的任何问题或意见,您的反馈是我们持续改进的动力!(512字以内)</label>
+        </div>
+        <div class="upload">
+            <a href="javascript:;">
+                <input type="file" id="uploadImage" name="uploadImage" multiple="multiple" onchange="javascript:AddNewImage(this.files);" accept="image/*">
+                <span>上传截图</span>
+            </a>
+            <input type="hidden" id="hiddenImageName" name="hiddenImageName">
+            <span class="selectImageButtonDescription">（小于3M）</span>
+        </div>
+        <div id="clippicpreview">
+            <div>
+                <div class="previewimg" id="clippicpreview1">
+                    <img src="./uploadbkg.jpg" style="width:62px;height:54px;">
+                </div>
+                <input type="hidden">
+                <div class="deletePreviewImage" onclick="javascript:deleteimg(&#39;clippicpreview1&#39;);" accept="image/*"></div>
+            </div>
+            <div>
+                <div class="previewimg" id="clippicpreview2">
+                    <img src="./uploadbkg.jpg" style="width:62px;height:54px;">
+                </div>
+                <input type="hidden">
+                <div class="deletePreviewImage" onclick="javascript:deleteimg(&#39;clippicpreview2&#39;);" accept="image/*"></div>
+            </div>
+            <div>
+                <div class="previewimg" id="clippicpreview3">
+                    <img src="./uploadbkg.jpg" style="width:62px;height:54px;">
+                </div>
+                <input type="hidden">
+                <div class="deletePreviewImage" onclick="javascript:deleteimg(&#39;clippicpreview3&#39;);" accept="image/*"></div>
+            </div>
+        </div>
+        <div class="contacttitle">联系方式</div>
+        <div class="fb_input">
+            <input type="text" id="email" name="email" placeholder="请留下您的联系方式, 以便我们及时回复。" maxlength="64">
+            <label id="contact_placeholder">请留下您的联系方式, 以便我们及时回复。</label>
+        </div>
+        <div class="btnarea">
+            <div onclick="AddFeedback();" class="cmtbtn">提交反馈</div>
+        </div>
+        <div class="modal fade" style="overflow-y:visible;" id="alertmodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content" style="border-radius:0;">
+                    <div class="modal-body">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <input type="hidden" id="msid" name="msid" value="">
+        <input type="hidden" id="url" name="url" value="http://cn.bing.com/academic/profile?id=2146436343&amp;FORM=QBRE&amp;encoded=0">
+        <input type="hidden" name="iframeId" value="-27405654365">
+        <input type="hidden" id="contact" name="contact" value="">
+        <input type="hidden" name="event" value="profile">
+    </div>
+</form>
+
+
+
+</body></html>
