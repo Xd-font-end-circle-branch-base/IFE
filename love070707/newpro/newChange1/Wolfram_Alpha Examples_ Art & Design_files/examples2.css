@@ -1,0 +1,699 @@
+/* ------------------------------- Examples Subpages Redesign ------------------------------- */
+body {
+    background:#ffffff;
+    margin: 0px !important;
+}
+
+body.examples-overview {
+    min-width: 1054px;
+}
+
+body.examples-subpage {
+    min-width: 1034px;
+}
+
+#templateContent {
+    min-height: 400px;
+}
+
+#pageTitle {
+  display: block;
+  background: none !important;
+}
+
+#pageTitle a{
+    position:relative;
+}
+
+#content {
+    margin: 0 auto;
+    position: relative;
+  width:1024px;
+  z-index: 10;
+  margin-bottom: 30px;
+}
+
+#content .main-pod{
+    margin: 40px auto 0;
+    border: 1px solid #d0d0d0;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 1024px;
+}
+
+#content .header h2, #content .header .backToTopics, #content .header .topLevelCategory{
+    color:#ffffff;
+    font:18px regular Arial, Helvetica, sans-serif;
+    text-shadow: 0px 0px 1px rgba(0,0,0,.4);
+}
+
+#content .header h2 {
+    font-size:21px;
+}
+
+#content .header .backToTopics, #content .header .topLevelCategory{
+    position:relative;
+    top:-2px;
+}
+
+#content .header .backToTopics, #content .header .topLevelCategory {
+    color:#fff4c1;
+}
+
+#content .header .backToTopics:hover, #content .header .topLevelCategory:hover {
+    color:white;
+}
+
+#content .header .pro-label {
+    position: absolute;
+    margin-left: 12px;
+    top: 21px;
+}
+
+/* -------------------------- */
+/*  Example Main Pod Header   */
+/* -------------------------- */
+
+#content .top-header {
+    background-color: #ff9415; /* for non-css3 browsers */
+    color:#ffffff;
+    min-height:65px;
+}
+
+#content .top-header .header {
+    margin:0;
+    padding:23px 0px 17px 25px;
+}
+
+#content .top-header .button{
+    /* Gradient */
+    background-color: #ffac3d; /* for non-css3 browsers */
+
+    /* Border with Rounded Edges */
+    border: 1px #d97810;
+   -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -khtml-border-radius: 3px;
+    border-radius: 3px;
+
+    font: 14px Arial, Helvetica, sans-serif;
+    color: #FFFFFF; 
+    box-shadow: 0px 0px 4px #d56f00;
+    text-shadow: 0px 0px 1px rgba(0,0,0,.4);
+
+    width: 283px;
+    padding:12px 5px 12px 12px;
+    margin: 12px 15px 0px 12px;
+    position: relative;
+    float: right;
+
+    z-index:10; /* fixes problem with hover */
+}
+
+#content .top-header .button:hover, #content .top-header .button.fakeHover{
+    background-color: #ffb849; /* for non-css3 browsers */
+}
+
+/* Topics 3-line Icon */
+#content .top-header .button .topicsImage {
+    background-image: url(http://www.wolframcdn.com/images/examples/topics-icon.png);
+    
+    width: 21px;
+    height: 17px;
+
+    position:absolute;
+    top:12px;
+    right: 7px;
+}
+
+#content .top-header h2 {
+    text-align:right;
+    position:relative;
+    display:inline-block;
+    margin: 0;
+}
+
+
+/* -------------------------- */
+/*  Example Main Pod          */
+/* -------------------------- */
+
+#content .mid {
+    overflow: hidden;
+    margin:0 10px 0 5px;
+    padding:15px 15px 15px 25px;
+    background-color:white;
+    /*width: 930px;*/
+}
+
+/*#content .mid .text {
+    margin:0;
+    padding:0;
+    width:73%;
+}
+
+#content .mid .text.noBlogs {
+    width:100%;
+    margin:0 auto;
+}*/
+
+#content .mid .ex-sectionhead, #content .mid .ex-section {
+    color:#FFCC22; 
+    /*ff8f33*/
+    font: bold 16px Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+}
+
+#content .mid a .ex-sectionhead:hover {
+    color:#f37800;
+}
+
+.sectionWrapper {
+    margin-bottom:23px;
+}
+
+/* ------ Columns ------- */
+.col2 {
+    width:630px;
+    /*min-height:20px;*/
+    float:left;
+    margin-right:22px; 
+   /* margin-left: -50px;  */
+    /*display: inline-block; */
+}
+
+.text.noBlogs .col2 {
+    width:48%;
+}
+
+.text.noBlogs .col2.second {
+    margin:0 0 0 15px;
+}
+
+.col3 {
+    width:27%;
+    float:left;
+}
+
+.col4 {
+    width:22.8%;
+    float:left;
+}
+.col4:not(:last-child) {
+    margin-right: 15px;
+}
+
+
+/* ------ Example Input Boxes ------*/
+
+.text .example {
+    width:100%;
+}
+
+/* Links to other topics */
+.nav {
+    display: none;
+}
+
+/* ------ Blog Posts Sidebar ----- */
+
+.blogLinksContainer {
+    position:relative;
+    float:right;
+    /*display: inline-block;*/
+}
+
+
+.gray.sidebar {
+    border: 1px solid #d0d0d0;
+    width:250px;
+    margin: auto;
+    position: relative;
+    top: 3px;
+}
+
+.gray.sidebar .titleBar {
+    background-color: #f7f7f7;
+    font:12px Arial, Helvetica, sans-serif;
+    line-height: 17px;
+    text-align:left;
+    color:#777;
+    height:17px;
+    padding-top:12px;
+    padding-bottom:8px;
+    padding-left:23px;
+    text-transform: uppercase;
+    border-bottom: 1px solid #d0d0d0;
+}
+
+.gray.sidebar .contents{
+    background-color:#ffffff;
+    padding-bottom:15px;
+}
+
+.gray.sidebar .contents .relatedBlog{
+    padding:15px 0 0 0; 
+}
+
+.gray.sidebar.blogPosts:not(.referenceLink) .contents .relatedBlog {
+    display:none;
+}
+
+.contents .blogIcon{
+    background-repeat:no-repeat;
+    background-position:center;    
+
+    width:50px;
+    height:32px; 
+
+    display:inline-block;
+    vertical-align:top;
+
+    margin-left:12px;
+}
+
+.referenceLink .contents .blogIcon{
+   vertical-align:middle; 
+}
+
+.referenceLink {
+   display: none;
+}
+.gray.sidebar .contents .blogLink{
+    width:206px;
+    color: #999999; 
+    font-size:12px;
+    display:inline-block;
+    vertical-align:middle;
+    line-height: 17px; 
+}
+
+
+.gray.sidebar .contents .blogLink:hover {
+    color:#ff9400;
+}
+
+/* ------------- On Hover Popup for All Topics Links -----------------*/
+.popup {
+    display:none;
+
+    position: absolute;
+    z-index:100;
+    left: 13px;
+    top: 43px;
+}
+
+
+.arrow-up{
+    background-image:url(http://www.wolframcdn.com/images/examples/examples-arrow.png);
+    background-repeat:no-repeat;
+    
+    height:18px;
+    width:30px;
+
+    position:absolute;
+    top:2px;
+    right:193px;
+}
+
+/*------- All this to get the gray shadow around the pop window with a border
+ *        It is necessary to have 3 sections to allow for the transparent arrow to 
+ *        be inserted into the border.
+ * ------------------------------------------*/
+.borderbox {
+    background:rgba(137,137,137,0.7);
+    border:1px solid rgba(91,91,91,0.7);
+    
+    height:345px;
+}
+
+.containerbox {
+    position: relative;
+    margin: 19px 0 0 10px;
+    display:inline-block;
+}
+
+.leftbox {
+    overflow:visible;
+    float:left;
+
+    width:722px;
+
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-bottomleft: 5px;
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-right:none;
+
+    box-shadow:-3px 0px 5px 0px #dddddd;
+}
+
+.midbox {
+    float:left;
+    margin-top:1px;/* because of the lack of a top border*/
+    width:27px;
+     
+    border-right:none;
+    border-left:none;
+    border-top:none;
+
+    box-shadow:0px 8px 6px -7px #dddddd; /*only on the bottom*/
+}
+
+.rightbox {
+    float:left;
+
+    width:193px;
+    
+    -moz-border-radius: 0 5px 5px 0;
+    -webkit-border-radius: 0 5px 5px 0;
+    -khtml-border-radius: 0 5px 5px 0;
+    border-radius: 0 5px 5px 0;
+
+    border-left:none;
+
+    box-shadow:2px 0px 5px -1px #dddddd; /*only on top, bottom, right*/
+}
+
+/* white box that contains all topic links*/
+.popup .linkbox{
+    background:#ffffff;
+    border: 1px #dbdbdb;
+    /*box-shadow: 0px 0px 0px 13px #FFFFFF;*/
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -khtml-border-radius: 4px;
+    border-radius: 4px;
+
+    position:absolute;
+    left:10px;
+    top:10px;
+    width:887px;
+    height:288px;
+    padding:10px 0px 30px 35px;
+}
+
+.topicsCol {
+    width: 25%;
+    float: left;
+}
+
+.topicsCol a{
+    padding-top:10px;
+}
+
+.topicsCol .ex-link-pro {
+    color:#fca000;
+    margin-right:3px;
+}
+
+.topicsCol .ex-link {
+    color:rgb(111,111,111);
+    margin:0;
+    display:inline-block;
+    width:100%;
+    height:100%;
+}
+
+.topicsCol span {
+    display: inline-block;
+}
+
+.topicsCol li:hover {
+    background-color:#FFA332;
+    color:#ffffff;
+}
+
+.topicsCol li:hover .ex-link, .topicsCol li:hover .ex-link-pro, .topicsCol li:hover .doubleRightAngleQuote {
+    color:#ffffff;
+}
+
+.doubleRightAngleQuote {
+    color: #fca000;
+    margin:-2px 3px 0 8px;
+}
+
+.ex-link .doubleRightAngleQuote {
+    float:left;
+    margin-left: 8px;
+}
+
+.topicsCol li {
+    height:34px;
+}
+
+.topicsCol ul {
+    margin: 0;
+    padding: 0 25px 0 0;
+}
+/* --------------------------------------------------------------------------------- */
+
+/* ----------------------- Examples Homepage Redesign ------------------------------ */
+
+.mainContainer {
+    height: 100%;
+    margin: 25px 40px 0px 40px;
+}
+
+.examplePodsContainer {
+    width: 100%;
+    height: 100%;
+    max-width: 998px;
+    margin: 0 auto;
+}
+
+.titleBarContainer {
+    width: 998px;
+    margin: 0 auto;
+    color: #777777;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.examplesTitleBar {
+    display:block;
+ 
+    margin:10px 0 10px 0; 
+}
+
+.subpage .examplesTitleBar {
+    display:block;
+ 
+    margin:18px 0 18px 0; 
+}
+
+a.exampleLink {
+    color: #777777;
+    text-decoration: none;
+}
+
+a.exampleLink:hover {
+    color: #ff9400;
+}
+
+/* --------- Individual Example Category Pod --------- */
+
+.examplesPod {
+    width: 225px;
+    margin-bottom:20px;
+    background-color:#ffffff;
+    border: 1px solid #d0d0d0;
+}
+
+.examplesPod.pro {
+    background-color:#fffbef;
+     
+    border-style:solid;
+    border-color:#e9b680;
+    border-width:1px;
+}
+
+.examplesPod .podTitle {
+    position:relative;
+    overflow:auto;
+    padding:10px 10px 10px 10px;
+    background-color: #ff9415; /* for non-css3 browsers */
+    color:#ffffff;
+    font-size:15px;
+    font-weight:bold;
+    text-transform: uppercase;
+    width: 205px; /* FIX for Ubuntu Chrome Bug */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a .podTitle, a .podImage {
+    opacity:1.0;
+    -webkit-transistion: all .2s linear;
+    transition: all .2s linear;
+}
+
+a:hover .podTitle {
+    background-color:#ffa32c;
+    background-image:none;
+}
+
+a:hover .podImage {
+    opacity:0.7;
+}
+
+.examplesPod .proIcon {
+    float:left;
+}
+
+.examplesPod .category {
+    float:left;
+    margin:3px 0 0 4px;
+   
+    line-height:18px;
+}
+
+.examplesPod.pro .category {
+    width: 156px;
+}
+
+.examplesPod .proCalloutIcon {
+    position: absolute;
+    right: 3px;
+    top: 50%;
+    margin-top: -6px;
+}
+
+.examplesPod .subpodLinks {
+    padding: 25px 15px 25px 15px;
+    font:12px Arial, sans serif Regular;
+    color:rgb(153,153,153);
+    line-height:18px;
+}
+
+/* ------- Blog Posts Box ------- */
+.index.blogPosts {
+    width: 205px;
+    
+    -moz-box-shadow: 0px 0px 11px rgba(51,51,51,0.2);
+    -webkit-box-shadow: 0px 0px 11px rgba(51,51,51, 0.2);
+    box-shadow: 0px 0px 6px rgba(51,51,51,0.2); /*#333333*/
+
+    margin-bottom:20px;
+
+    background-color:#ffffff;
+
+    padding:10px 10px 10px 10px;  
+
+    font:12px Arial Bold;
+    color: #666666;
+}
+
+.index.blogPosts .relatedBlog {
+    margin-bottom:25px; 
+}
+
+.index.blogPosts a.blogLink {
+    color: #838383;
+    font:12px Arial, sans serif Regular;
+}
+
+.index.blogPosts .title {
+    font:12px Arial, sans serif Bold;
+    margin-bottom:7px;
+    text-transform: uppercase;
+    color:#666666;
+    font-weight: Bold;
+    line-height: 16px;
+}
+
+.index.blogPosts .blogIcon {
+    float:left;
+    margin-left:0px;
+}
+
+.index.blogPosts .textWrapper {
+    margin-top:7px;
+}
+
+/* -- '...continually growing' gray box -- */
+.moreToCome {
+    color:rgb(133,133,133);
+    font-size:13px;
+    font-style:italic;
+    line-height:1.4;
+    width: 185px;
+    border: 1px solid #d0d0d0;    
+    margin-bottom:20px;
+    background-color:#F9F9F9;
+    padding:20px 20px 20px 20px;
+}
+
+/* --------------------------------------------------------------------------------- */
+
+
+/* --------- Sticky Footer --------------*/
+footer.common {
+    background: #f4f4f4;
+    background: #EEE;
+    background: -moz-linear-gradient(top, #EEEEEE 0%, #fff 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#EEEEEE), color-stop(100%,#fff));
+    
+    margin-top:0px;
+}
+
+html, body {
+    height:100%;
+}
+
+#templateContent {
+    overflow:auto;
+    padding-bottom: 70px;
+    margin-bottom: -4em;
+}
+
+/* -- visual examples -- */
+#visualExamplesBanner {
+    padding-bottom:30px;
+    display:inline-block; 
+    width:100%;
+    margin-top: 30px;
+}
+
+.more-ex {
+    bottom:50px;
+}
+
+
+/* ----------------- Calculator Links ------------------- */
+.calculator {
+    color: #888;
+    font-size: 11px;
+    margin-bottom: 12px;
+}
+
+.calculator .doubleRightAngleQuote {
+    margin-left: 0px;
+}
+
+.calculator a {
+    color: #ff8f33;
+}
+
+.calculator a:hover, .calculator a:hover .doubleRightAngleQuote {
+    color: #DB0303;
+    cursor: pointer;
+}
+
+#ex-main footer {
+    background-color: white;
+    padding-left: 15px;
+    margin-top: -15px;
+}
+
+#ex-main footer .calculator {
+    font-size: 11px;
+    color: #888;
+    border-top: 1px solid #D7D7D7;
+    width: 636px;
+    padding: 5px 0 25px 0;
+}
+
+#indexTopContent {
+    margin: 0 40px;
+}

@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<!-- saved from url=(0028)www.wolframalpha.com/ -->
+<html id="ng-app" data-ng-app="waApp" data-ng-controller="AppController" lang="en-us" data-ng-class="[routeClass, bgClass]" class="ng-scope blue-circles home">
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style> 
+  <title data-ng-bind="title" class="ng-binding">Disa</title> 
+  <!--<base href="/">-->
+  <base href="." /> 
+  <meta name="description" content="Wolfram|Alpha is more than a search engine. It gives you access to the world's facts and data and calculates answers across a range of topics, including science, nutrition, history, geography, engineering, mathematics, linguistics, sports, finance, music..." /> 
+  <meta name="viewport" content="width=device-width" /> 
+  <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" /> 
+  <link rel="shortcut icon" href="" /> <!-- www.wolframalpha.com/favicon.ico?v=2 -->
+  <meta name="msapplication-TileImage" content="win8-tile-icon.png" /> 
+  <meta name="msapplication-TileColor" content="#ff6600" /> 
+  <link rel="stylesheet" href="./Disater tracking/wa.min.css" /> 
+  <link rel="stylesheet" href="./Disater tracking/css" /> 
+  <link rel="stylesheet" href="./Disater tracking/css(1)" /> 
+  <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <script type="text/javascript" src="./Disater tracking/angular.locale.en-us.js"></script>
+  <script type="text/javascript" src="./Disater tracking/cookietest.jsp"></script>
+ </head> 
+ <body data-ng-controller="UserController" class="ng-scope"> 
+  <noscript class="no-script">
+    &lt;div class=&quot;main-content&quot;&gt; &lt;div class=&quot;main-image&quot;&gt;&lt;/div&gt; &lt;div class=&quot;big-text&quot;&gt;Uh oh! Wolfram|Alpha doesn’t run without JavaScript!&lt;/div&gt; &lt;div class=&quot;small-text&quot;&gt;Please enable JavaScript. If you don’t know how, you can find instructions &lt;a href=&quot;www.enable-javascript.com/&quot; target=&quot;_blank&quot;&gt;here&lt;/a&gt;.&lt;/div&gt; &lt;div class=&quot;small-text&quot;&gt;Once you’ve done that, refresh this page to start using Wolfram|Alpha.&lt;/div&gt; &lt;/div&gt; &lt;footer class=&quot;page fade&quot;&gt; &lt;ul data-ng-show=&quot;components.footer&quot;&gt; &lt;!-- list of footer components --&gt; &lt;li class=&quot;outer-li&quot; id=&quot;footer-top-links&quot;&gt; &lt;!-- top two rows --&gt; &lt;ul&gt; &lt;li&gt;&lt;a target=&quot;_self&quot; href=&quot;//www.wolframalpha.com/pro/?src=footer&quot; title=&quot;Wolfram|Alpha Pro&quot;&gt;Pro&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a target=&quot;_self&quot; href=&quot;//products.wolframalpha.com/web-apps/&quot; title=&quot;Wolfram|Alpha Web Apps&quot;&gt;Web Apps&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a target=&quot;_self&quot; href=&quot;//products.wolframalpha.com/mobile/&quot; title=&quot;Wolfram|Alpha Mobile Apps&quot;&gt;Mobile Apps&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a target=&quot;_self&quot; href=&quot;//products.wolframalpha.com/&quot; title=&quot;Wolfram|Alpha Products&quot;&gt;Products&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a target=&quot;_self&quot; href=&quot;//products.wolframalpha.com/business/&quot; title=&quot;Wolfram|Alpha Business Solutions&quot;&gt;Business Solutions&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a target=&quot;_self&quot; href=&quot;//products.wolframalpha.com/developers/&quot; title=&quot;Wolfram|Alpha API &amp; Developer Solutions&quot;&gt;API &amp;amp; Developer Solutions&lt;/a&gt;&lt;/li&gt; &lt;li class=&quot;no-divider&quot;&gt;&lt;a target=&quot;_self&quot; href=&quot;//www.wolframalpha.com/about.html&quot; title=&quot;About Wolfram|Alpha&quot;&gt;About&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a target=&quot;_self&quot; href=&quot;//www.wolframalpha.com/resources/&quot; title=&quot;Wolfram|Alpha Resources &amp; Tools&quot;&gt;Resources &amp;amp; Tools&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a target=&quot;_self&quot; href=&quot;//blog.wolfram.com/category/wolframalpha/&quot; title=&quot;Wolfram|Alpha Blog&quot;&gt;Blog&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a target=&quot;_self&quot; href=&quot;//community.wolframalpha.com/&quot; title=&quot;Wolfram|Alpha Community&quot;&gt;Community&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a target=&quot;_self&quot; href=&quot;//www.wolframalpha.com/contact.html&quot; title=&quot;Contact Wolfram|Alpha&quot;&gt;Contact&lt;/a&gt;&lt;/li&gt; &lt;li class=&quot;no-divider&quot;&gt; &lt;a target=&quot;_self&quot; href=&quot;//www.wolframalpha.com/social/&quot; title=&quot;Connect&quot;&gt; Connect &lt;ul id=&quot;connect-icons&quot;&gt; &lt;li class=&quot;icon-social-facebook&quot;&gt;&lt;/li&gt; &lt;li class=&quot;icon-social-twitter&quot;&gt;&lt;/li&gt; &lt;li class=&quot;icon-social-rss&quot;&gt;&lt;/li&gt; &lt;li class=&quot;icon-social-mail&quot;&gt;&lt;/li&gt; &lt;li class=&quot;icon-social-linkedin&quot;&gt;&lt;/li&gt; &lt;li class=&quot;icon-social-tumblr&quot;&gt;&lt;/li&gt; &lt;/ul&gt; &lt;/a&gt; &lt;/li&gt; &lt;/ul&gt; &lt;/li&gt; &lt;li class=&quot;outer-li&quot; id=&quot;footer-copy&quot;&gt; &lt;!-- copyright row --&gt; &lt;ul&gt; &lt;li&gt;&lt;span&gt;&amp;copy;2016 Wolfram Alpha LLC&lt;/span&gt;&lt;/li&gt; &lt;li&gt;&lt;a target=&quot;_blank&quot; href=&quot;//www.wolframalpha.com/termsofuse.html&quot; title=&quot;Wolfram|Alpha Terms of Use&quot; &gt;Terms&lt;/a&gt;&lt;/li&gt; &lt;li class=&quot;no-divider&quot;&gt;&lt;a target=&quot;_blank&quot; href=&quot;//www.wolframalpha.com/privacypolicy.html&quot; title=&quot;Wolfram|Alpha Privacy Policy&quot;&gt;Privacy&lt;/a&gt;&lt;/li&gt; &lt;/ul&gt; &lt;/li&gt; &lt;li class=&quot;outer-li&quot; id=&quot;footer-bot-links&quot;&gt; &lt;!-- bottom row links --&gt; &lt;ul&gt; &lt;li class=&quot;no-divider icon-wolfram-corporate-spikey&quot;&gt;&lt;a target=&quot;_self&quot; class=&quot;icon-wolfram-corporate-logotype&quot; href=&quot;//www.wolfram.com&quot; title=&quot;Wolfram&quot;&gt;&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a target=&quot;_self&quot; href=&quot;//www.wolfram.com&quot; title=&quot;Wolfram&quot;&gt;wolfram.com&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a target=&quot;_self&quot; href=&quot;//www.wolfram.com/language&quot; title=&quot;Wolfram Language&quot;&gt;Wolfram Language&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a target=&quot;_self&quot; href=&quot;//www.wolfram.com/education&quot;&gt;Wolfram for Education&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a target=&quot;_self&quot; href=&quot;//demonstrations.wolfram.com&quot; title=&quot;Wolfram Demonstrations&quot;&gt;Wolfram Demonstrations&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a target=&quot;_self&quot; href=&quot;//www.wolfram.com/mathematica&quot; title=&quot;Mathematica&quot;&gt;Mathematica&lt;/a&gt;&lt;/li&gt; &lt;li class=&quot;no-divider&quot;&gt;&lt;a target=&quot;_self&quot; href=&quot;//mathworld.wolfram.com&quot; title=&quot;MathWorld&quot;&gt;MathWorld&lt;/a&gt;&lt;/li&gt; &lt;/ul&gt; &lt;/li&gt; &lt;/ul&gt; &lt;/footer&gt; 
+  </noscript> 
+  <div id="wrap" data-ng-class="[routeClass, bgClass, trayOpen, lightboxOpen, settingsClass, examplePodsClass, resultsWidthClass, signInStatusClass, (components.header) ? '' : 'headerless']" data-ng-click="showModel()" class="blue-circles home rw-large sign-in-resolved"> 
+   <wa-page-header style="visibility:hidden">
+    <header class="page home blue-circles" data-ng-show="components.header" data-ng-class="[routeClass, bgClass]">
+     
+     
+    </header>
+   </wa-page-header> 
+   <wa-internal-banner></wa-internal-banner> 
+   <div ng-hide="routeClass == 'home'" wa-header-article="" class="ng-hide">
+    <article class="headerad-pro-1 ng-scope ng-hide" id="headerad-pro" ng-hide="routeClass == 'home' || !show" ng-class="{'slide':!show}" ng-controller="HeaderArticleController">
+     <div class="headerad-close" id="headerad-close">
+      <p>x</p>
+     </div>
+     <a class="headerad-placeholder-linkwrap" id="headerad-linkwrap" target="_blank" href="">
+     <!-- www.wolframalpha.com/pro?src=pro-banner-5 -->
+      <div class="headerad-def-container" id="headerad-container">
+       <div class="headerad-pro-text proAd-5" id="headerad-text">
+        <div class="headerad-pro-button-5" id="headerad-button"></div>
+       </div>
+       <br class="clear" />
+      </div></a>
+    </article>
+   </div> 
+   <!-- ngIf: settingsClass != 'settings' -->
+   <wa-input-form data-ng-if="settingsClass != 'settings'" class="ng-scope">
+    <div id="input-container">
+     <form id="input" data-ng-submit="updateQuery(); blurQueryInput($event);" data-ng-class="{'tray-open': trayType !== ''}" outside-click="updateTray('')" autocomplete="off" class="ng-pristine ng-valid ng-valid-maxlength ng-valid-url">
+      <h1 id="logo" data-ng-class="getClasses()" class="non-pro-logo"><a class="ir" data-ng-href="index.html" title="Wolfram|Alpha Computational Knowledge Engine" href=""><!-- www.wolframalpha.com/index.html --><strong class="spikey"><span>Wolfram</span>Alpha</strong><sup>&reg;</sup> <em>Computational Knowledge Engine<sub>™</sub></em></a></h1>
+      <fieldset class="main ng-scope" data-ng-controller="FavoriteStarController">
+       <!-- <label class="query-label ng-binding" for="query" data-ng-bind-html="trustAsHtml(i18n['fo want to calculate or know about']||'Enter what you want to &lt;strong&gt;calculate&lt;/strong&gt; or &lt;strong&gt;know about&lt;/strong&gt;:')">Enter what you want to <strong>calculate</strong> or <strong>know about</strong>:</label> -->
+       <div class="query-input-flex">
+        <wa-input-entity data-ng-class="{ 'with-opacity' : !cleanInput &amp;&amp; query.webApp }" wa-entity-name="getEntityName(query)" wa-entity-type="getInputType()" wa-entity-show-close=":: true" wa-entity-on-close="nullifyFileInput(); nullifyWebApp()" class="ng-isolate-scope">
+         <span class="input-entity-container type-none" data-ng-class="'type-' + type"><span class="entity-name ng-binding"></span><span class="cancel-btn" data-ng-show="showClose" data-ng-click="onClose()"></span></span>
+        </wa-input-entity>
+        <input data-wa-query-input="" data-ng-value="query.input" data-ng-model="query.input" id="query" name="query" maxlength="200" data-typeahead="suggestion as suggestion.value for suggestion in getSuggestions($viewValue)" data-fb-fyi="non-empty-string" data-fb-fyi-is-open="" data-fb-fyi-placement="false" data-fb-fyi-overlay="true" class="ng-pristine ng-valid ng-isolate-scope ng-empty ng-valid-maxlength ng-touched" />
+        <ul class="typeahead dropdown-menu ng-isolate-scope" ng-style="{display: isOpen()&amp;&amp;'block' || 'none'}" typeahead-popup="" matches="matches" active="activeIdx" shown="shownIdx" select="select(activeIdx)" query="query" position="position" style="display: none;">
+         <!-- ngRepeat: match in matches | limitTo:(matches[0].model.type === 'im' ? 7 : 6 ) track by match.label -->
+         <li class="more-input"><button type="button" class="kb" data-simple-tooltip="Extended keyboard" data-ng-click="openInputTab('kb')"></button> <button type="button" class="camera" data-simple-tooltip="Image input" data-ng-click="openInputTab('image')"></button> <button type="button" class="data" data-simple-tooltip="Data input" data-ng-click="openInputTab('data')"></button> <button type="button" class="upload" data-simple-tooltip="File upload" data-ng-click="openInputTab('file')"></button></li>
+        </ul> 
+        <!-- ngIf: routeClass != 'home' && routeClass != 'notFound' --> 
+        <span class="glyphicon glyphicon-search" style="color:#FE6518;"></span> 
+        <!-- <input type="submit" name="equal" class="eq" title="compute" value="Submit" /> -->
+       </div>
+       <!-- ngIf: showEditFavorite -->
+      </fieldset>
+      <!-- ngInclude: -->
+      <ng-include src="'input-form/special-input/file-input-example-queries/file-input-example-queries.html'" class="ng-scope">
+       <div id="file-input-example-queries" data-ng-class="[query.fileinput.type + '-queries', showFileInputExamples ? 'show-examples' : null]" class="ng-scope -queries">
+        <span class="close-btn" data-ng-click="closeFileSampleQueries()">x</span>
+        <div>
+         <h3 class="automatic">Hit enter for automatic analysis</h3>
+         <div class="image-example-query automatic-analysis" data-ng-click="closeFileSampleQueries();updateQuery();">
+          (automatic analysis)
+         </div>
+        </div>
+        <div class="gray-background">
+         <h3>Or try one of these queries:</h3>
+         <!-- ngIf: query.fileinput.examplefile -->
+         <!-- ngIf: !query.fileinput.examplefile -->
+         <div data-ng-if="!query.fileinput.examplefile" class="ng-scope">
+          <div class="image-example-query" data-ng-click="closeFileSampleQueries();query.input='analyze image';updateQuery();">
+           analyze image
+          </div>
+          <div class="image-example-query" data-ng-click="closeFileSampleQueries();query.input='decrease brightness by .5';updateQuery();">
+           decrease brightness by .5
+          </div>
+          <div class="image-example-query" data-ng-click="closeFileSampleQueries();query.input='embossing effect';updateQuery();">
+           embossing effect
+          </div>
+          <div class="image-example-query" data-ng-click="closeFileSampleQueries();query.input='find edges';updateQuery();">
+           find edges
+          </div>
+          <div class="image-example-query" data-ng-click="closeFileSampleQueries();query.input='Gaussian blur with radius 2';updateQuery();">
+           Gaussian blur with radius 2
+          </div>
+         </div>
+         <!-- end ngIf: !query.fileinput.examplefile -->
+         <!-- ngIf: !query.fileinput.type || query.fileinput.type === 'file' -->
+         <a href="" target="_self" data-ng-if="!query.fileinput.type || query.fileinput.type === 'file'" class="ng-scope">See all examples &raquo;</a><!-- www.wolframalpha.com/examples/FileUpload.html -->
+         <!-- end ngIf: !query.fileinput.type || query.fileinput.type === 'file' --> 
+         <!-- ngIf: query.fileinput.type === 'image' --> 
+         <!-- ngIf: query.datainput || query.fileinput.type === 'data' -->
+         <fieldset class="do-not-show-again" data-ng-show="!query.fileinput.examplefile">
+          <input type="checkbox" id="show-again-checkbox" data-ng-model="$parent.blockSampleFileQueries" class="ng-pristine ng-untouched ng-valid ng-empty" />
+          <label for="show-again-checkbox">Don't show this again</label>
+         </fieldset>
+        </div>
+       </div>
+      </ng-include>
+      <section id="special-input" ng-show="routeClass != 'notFound'" data-ng-class="{'si-pro': isPro}" data-wa-special-input="">
+       <!-- ngInclude: -->
+       <ng-include src=" 'input-form/special-input/special-input-tray/pro-keyboard/pro-keyboard.html' " class="ng-scope">
+        <section class="special-input-tray ng-scope" id="pro-keyboard" data-ng-class="{'kb-pro':isPro}" data-ng-click="handleKeyboardFocus()" wa-special-input-tray="kb">
+         <div id="extended-keyboard-info" class="info-popup ng-isolate-scope" data-wa-pro-feature="trayType" data-wa-pro-feature-placement="false" data-wa-pro-feature-append-to-body="false" data-wa-pro-feature-is-open="false"></div>
+         <ul data-ng-click="handleKeyboardFocus()">
+          <li>
+           <ul class="kb-row">
+            <li id="kb-pi" data-ng-click="appendInput('π', true)" class="kb-always"><span>pi</span></li>
+            <li id="kb-degree" data-ng-click="appendInput('&deg;', true)" class="kb-always"><span>degree</span></li>
+            <li id="kb-infinity" data-ng-click="appendInput('∞', true)" class="kb-always"><span>infinity</span></li>
+            <li id="kb-square" data-ng-click="appendInput('√', true)" class="kb-always"><span>square root</span></li>
+            <li id="kb-integral" data-ng-click="appendInput('∫')"><span>integral</span></li>
+            <li id="kb-summation" data-ng-click="appendInput('∑')"><span>summation sign</span></li>
+            <li id="kb-partial" data-ng-click="appendInput('∂')"><span>partial d</span></li>
+            <li id="kb-product" data-ng-click="appendInput('∏')"><span>product sign</span></li>
+            <li id="kb-for" data-ng-click="appendInput('∀')"><span>for all</span></li>
+            <li id="kb-there" data-ng-click="appendInput('∃')"><span>there exists</span></li>
+            <li id="kb-union" data-ng-click="appendInput('∪')"><span>union</span></li>
+            <li id="kb-intersection" data-ng-click="appendInput('∩')"><span>intersection</span></li>
+            <li id="kb-difference" data-ng-click="appendInput('∇')"><span>difference / delta</span></li>
+            <li id="kb-capital-delta" data-ng-click="appendInput('Δ')"><span>capital delta</span></li>
+           </ul></li>
+          <li>
+           <ul class="kb-row">
+            <li id="kb-alpha" data-ng-click="appendInput('α')"><span>alpha</span></li>
+            <li id="kb-beta" data-ng-click="appendInput('β')"><span>beta</span></li>
+            <li id="kb-gamma" data-ng-click="appendInput('γ')"><span>gamma</span></li>
+            <li id="kb-delta" data-ng-click="appendInput('δ')"><span>delta</span></li>
+            <li id="kb-epsilon" data-ng-click="appendInput('ε')"><span>epsilon</span></li>
+            <li id="kb-zeta" data-ng-click="appendInput('ζ')"><span>zeta</span></li>
+            <li id="kb-eta" data-ng-click="appendInput('η')"><span>eta</span></li>
+            <li id="kb-theta" data-ng-click="appendInput('θ')"><span>theta</span></li>
+            <li id="kb-kappa" data-ng-click="appendInput('κ')"><span>kappa</span></li>
+            <li id="kb-lambda" data-ng-click="appendInput('λ')"><span>lambda</span></li>
+            <li id="kb-mu" data-ng-click="appendInput('μ')"><span>mu</span></li>
+            <li id="kb-nu" data-ng-click="appendInput('ν')"><span>nu</span></li>
+            <li id="kb-xi" data-ng-click="appendInput('ξ')"><span>xi</span></li>
+            <li id="kb-rho" data-ng-click="appendInput('ρ')"><span>rho</span></li>
+           </ul></li>
+          <li>
+           <ul class="kb-row">
+            <li id="kb-sigma" data-ng-click="appendInput('σ')"><span>sigma</span></li>
+            <li id="kb-tau" data-ng-click="appendInput('τ')"><span>tau</span></li>
+            <li id="kb-phi" data-ng-click="appendInput('φ')"><span>phi</span></li>
+            <li id="kb-chi" data-ng-click="appendInput('χ')"><span>chi</span></li>
+            <li id="kb-psi" data-ng-click="appendInput('ψ')"><span>psi</span></li>
+            <li id="kb-omega" data-ng-click="appendInput('ω')"><span>omega</span></li>
+            <li id="kb-capital-gamma" data-ng-click="appendInput('Γ')"><span>capital gamma</span></li>
+            <li id="kb-capital-theta" data-ng-click="appendInput('Θ')"><span>capital theta</span></li>
+            <li id="kb-capital-lambda" data-ng-click="appendInput('Λ')"><span>capital lambda</span></li>
+            <li id="kb-capital-xi" data-ng-click="appendInput('Ξ')"><span>capital xi</span></li>
+            <li id="kb-capital-upsilon" data-ng-click="appendInput('ϒ')"><span>capital upsilon</span></li>
+            <li id="kb-capital-phi" data-ng-click="appendInput('Φ')"><span>capital phi</span></li>
+            <li id="kb-capital-chi" data-ng-click="appendInput('Ψ')"><span>capital chi</span></li>
+           </ul></li>
+          <li>
+           <ul class="kb-row">
+            <li id="kb-capital-omega" data-ng-click="appendInput('Ω')"><span>capital omega</span></li>
+            <li id="kb-mho" data-ng-click="appendInput('℧')"><span>mho</span></li>
+            <li id="kb-angstrom" data-ng-click="appendInput('&Aring;')"><span>angstrom</span></li>
+            <li id="kb-h-bar" data-ng-click="appendInput('ℏ')"><span>h-bar</span></li>
+            <li id="kb-alef" data-ng-click="appendInput('ℵ')"><span>alef</span></li>
+            <li id="kb-equilibrium" data-ng-click="appendInput('⇌')"><span>equilibrium</span></li>
+            <li id="kb-arrow" data-ng-click="appendInput('→')"><span>arrow</span></li>
+            <li id="kb-earth" data-ng-click="appendInput('⊕')"><span>earth / circled plus</span></li>
+            <li id="kb-sun" data-ng-click="appendInput('⊙')"><span>sun / circled dot</span></li>
+            <li id="kb-male" data-ng-click="appendInput('♂')"><span>male / mars</span></li>
+            <li id="kb-female" data-ng-click="appendInput('♀')"><span>female / venus</span></li>
+            <li id="kb-dagger" data-ng-click="appendInput('†')"><span>dagger</span></li>
+           </ul></li>
+         </ul>
+        </section>
+       </ng-include>
+       <!-- ngInclude: -->
+       <ng-include src=" 'input-form/special-input/special-input-tray/image-input/image-input.html' " class="ng-scope">
+        <section class="special-input-tray file-upload-input image-upload ng-scope" id="image-upload" wa-special-input-tray="image">
+         <h2 id="upload-tray-title">Image Input <span class="close-input-tray" data-ng-click="updateTray('')">&times;</span></h2>
+         <div data-wa-pro-feature="'image'" data-wa-pro-feature-placement="false" data-wa-pro-feature-append-to-body="false" data-wa-pro-feature-is-open="false" class="ng-isolate-scope"></div>
+         <div class="input-upload">
+          <div id="image-input-info" class="info-popup"></div>
+          <fieldset>
+           <label for="local-file-input">Upload an image from your computer:</label>
+           <input name="local-file-input" id="local-file-input" type="file" data-wa-file-input-upload="image" data-ng-disabled="!isPro" disabled="disabled" />
+          </fieldset>
+          <fieldset>
+           <label for="remote-file-input">Enter a URL for an image:</label>
+           <input name="remote-file-input" id="remote-file-input" type="url" data-ng-model="query.remoteUrl" data-ng-disabled="!isPro" class="ng-pristine ng-untouched ng-valid ng-empty ng-valid-url" disabled="disabled" /> 
+           <button type="button" data-ng-click="fetchRemoteUrl(query.remoteUrl, 'image')" data-ng-disabled="!isPro" class="wa-button" disabled="disabled">Go</button>
+          </fieldset>
+          <!-- ngIf: isPro -->
+          <div class="legal-links">
+           <a href="" target="_blank">Terms</a> | <!-- www.wolframalpha.com/termsofuse/ -->
+           <a href="" target="_blank">Privacy</a><!-- www.wolframalpha.com/privacypolicy.html -->
+          </div>
+         </div>
+         <div class="image-already-ready already-ready">
+          <span class="all-uploads ng-isolate-scope ng-hide" data-ng-show="isPro &amp;&amp; recentImages.length &gt; 0" data-account-lightbox="'uploads-image'" data-account-lightbox-placement="false" data-account-lightbox-overlay="true" data-account-lightbox-close-button="true">All images &raquo;</span>
+          <details class="recent-uploads recent-images ng-hide" data-ng-class="{ 'is-loading' : loadRecentImages }" data-ng-open="recentImagesOpen" data-ng-show="isPro &amp;&amp; (loadRecentImages || recentImages.length &gt; 0)">
+           <summary data-ng-click="$event.preventDefault();recentImagesOpen = !recentImagesOpen; sampleOpen = false;">Recent Images</summary>
+           <ul>
+            <!-- ngRepeat: fileObj in (recentImages | limitTo:4) -->
+           </ul>
+          </details>
+          <details class="sample-files" data-ng-open="sampleOpen" open="open">
+           <summary data-ng-click="$event.preventDefault();sampleOpen = !sampleOpen; recentImagesOpen = false;">Sample Images</summary>
+           <ul data-ng-show="sampleOpen &amp;&amp; trayType === 'image'" class="ng-hide">
+            <!-- ngRepeat: (filename, fileObj) in ::exampleImages -->
+            <li data-ng-repeat="(filename, fileObj) in ::exampleImages" data-ng-click="selectPreviousFile('image', filename, '1', exampleImagesFolderName, fileObj.Queries)" class="ng-scope">
+             <div class="image-upload-entry">
+              <img class="image-preview" data-ng-src="//www.wolframalpha.com//input/samplethumb/QuinSconce_thumb.png" src="./Disater tracking/QuinSconce_thumb.png" />
+             </div></li>
+            <!-- end ngRepeat: (filename, fileObj) in ::exampleImages -->
+            <li data-ng-repeat="(filename, fileObj) in ::exampleImages" data-ng-click="selectPreviousFile('image', filename, '1', exampleImagesFolderName, fileObj.Queries)" class="ng-scope">
+             <div class="image-upload-entry">
+              <img class="image-preview" data-ng-src="//www.wolframalpha.com//input/samplethumb/TwoLions_thumb.png" src="./Disater tracking/TwoLions_thumb.png" />
+             </div></li>
+            <!-- end ngRepeat: (filename, fileObj) in ::exampleImages -->
+            <li data-ng-repeat="(filename, fileObj) in ::exampleImages" data-ng-click="selectPreviousFile('image', filename, '1', exampleImagesFolderName, fileObj.Queries)" class="ng-scope">
+             <div class="image-upload-entry">
+              <img class="image-preview" data-ng-src="//www.wolframalpha.com//input/samplethumb/ClockTicks_thumb.png" src="./Disater tracking/ClockTicks_thumb.png" />
+             </div></li>
+            <!-- end ngRepeat: (filename, fileObj) in ::exampleImages -->
+            <li data-ng-repeat="(filename, fileObj) in ::exampleImages" data-ng-click="selectPreviousFile('image', filename, '1', exampleImagesFolderName, fileObj.Queries)" class="ng-scope">
+             <div class="image-upload-entry">
+              <img class="image-preview" data-ng-src="//www.wolframalpha.com//input/samplethumb/WestminsterAbbey_thumb.png" src="./Disater tracking/WestminsterAbbey_thumb.png" />
+             </div></li>
+            <!-- end ngRepeat: (filename, fileObj) in ::exampleImages -->
+            <li data-ng-repeat="(filename, fileObj) in ::exampleImages" data-ng-click="selectPreviousFile('image', filename, '1', exampleImagesFolderName, fileObj.Queries)" class="ng-scope">
+             <div class="image-upload-entry">
+              <img class="image-preview" data-ng-src="//www.wolframalpha.com//input/samplethumb/BloodCells_thumb.png" src="./Disater tracking/BloodCells_thumb.png" />
+             </div></li>
+            <!-- end ngRepeat: (filename, fileObj) in ::exampleImages -->
+            <li data-ng-repeat="(filename, fileObj) in ::exampleImages" data-ng-click="selectPreviousFile('image', filename, '1', exampleImagesFolderName, fileObj.Queries)" class="ng-scope">
+             <div class="image-upload-entry">
+              <img class="image-preview" data-ng-src="//www.wolframalpha.com//input/samplethumb/OriginOfSpecies_thumb.png" src="./Disater tracking/OriginOfSpecies_thumb.png" />
+             </div></li>
+            <!-- end ngRepeat: (filename, fileObj) in ::exampleImages -->
+            <li data-ng-repeat="(filename, fileObj) in ::exampleImages" data-ng-click="selectPreviousFile('image', filename, '1', exampleImagesFolderName, fileObj.Queries)" class="ng-scope">
+             <div class="image-upload-entry">
+              <img class="image-preview" data-ng-src="//www.wolframalpha.com//input/samplethumb/ColorPlates_thumb.png" src="./Disater tracking/ColorPlates_thumb.png" />
+             </div></li>
+            <!-- end ngRepeat: (filename, fileObj) in ::exampleImages -->
+            <li data-ng-repeat="(filename, fileObj) in ::exampleImages" data-ng-click="selectPreviousFile('image', filename, '1', exampleImagesFolderName, fileObj.Queries)" class="ng-scope">
+             <div class="image-upload-entry">
+              <img class="image-preview" data-ng-src="//www.wolframalpha.com//input/samplethumb/PaisleyPattern_thumb.png" src="./Disater tracking/PaisleyPattern_thumb.png" />
+             </div></li>
+            <!-- end ngRepeat: (filename, fileObj) in ::exampleImages -->
+            <div data-ng-show="sampleOpen &amp;&amp; trayType === 'image'" class="sample-pointer ng-hide"></div>
+           </ul>
+          </details>
+         </div>
+        </section>
+       </ng-include>
+       <!-- ngInclude: -->
+       <ng-include src=" 'input-form/special-input/special-input-tray/file-input/file-input.html' " class="ng-scope">
+        <section class="special-input-tray file-upload-input file-upload ng-scope" id="file-upload" wa-special-input-tray="file">
+         <h2 id="upload-tray-title">File Upload <span class="close-input-tray" data-ng-click="updateTray('')">&times;</span></h2>
+         <div data-wa-pro-feature="'file'" data-wa-pro-feature-placement="false" data-wa-pro-feature-append-to-body="false" data-wa-pro-feature-is-open="false" class="ng-isolate-scope"></div>
+         <div class="input-upload">
+          <div id="file-input-info" class="info-popup"></div>
+          <fieldset>
+           <label for="local-file-input">Upload a file from your computer:</label>
+           <input name="local-file-input" id="local-file-input" type="file" data-wa-file-input-upload="file" data-ng-disabled="!isPro" disabled="disabled" />
+          </fieldset>
+          <fieldset>
+           <label for="remote-file-input">Enter a URL for a file:</label>
+           <input name="remote-file-input" id="remote-file-input" type="url" data-ng-model="query.remoteUrl" data-ng-disabled="!isPro" class="ng-pristine ng-untouched ng-valid ng-empty ng-valid-url" disabled="disabled" /> 
+           <button type="button" data-ng-click="fetchRemoteUrl(query.remoteUrl, 'file')" data-ng-disabled="!isPro" class="wa-button" disabled="disabled">Go</button>
+          </fieldset>
+          <a class="copy-paste-input-link" data-ng-click="isPro &amp;&amp; updateTray('data')">Copy &amp; paste as input &raquo;</a>
+          <!-- ngIf: isPro -->
+          <div class="legal-links">
+           <a href="" target="_blank">Terms</a> | <!-- www.wolframalpha.com/termsofuse/ -->
+           <a href="" target="_blank">Privacy</a><!-- www.wolframalpha.com/privacypolicy.html -->
+          </div>
+         </div>
+         <div class="file-already-ready already-ready show-sample-files" data-ng-class="{ 'show-sample-files' : showSampleFiles }">
+          <span class="all-uploads ng-isolate-scope ng-hide" data-ng-show="isPro &amp;&amp; recentFiles.length &gt; 0" data-ng-click="showSampleFiles = false;" data-account-lightbox="'uploads-file'" data-account-lightbox-placement="false" data-account-lightbox-overlay="true" data-account-lightbox-close-button="true">All files &raquo;</span>
+          <details data-ng-show="isPro &amp;&amp; (loadRecentFiles || recentFiles.length &gt; 0)" class="recent-uploads recent-files ng-hide" data-ng-class="{ 'is-loading' : loadRecentFiles }" data-ng-open="recentFilesOpen">
+           <summary data-ng-click="$event.preventDefault();recentFilesOpen = !recentFilesOpen; showSampleFiles = false;">Recent files</summary>
+           <ul class="file-list">
+            <!-- ngRepeat: fileObj in (recentFiles | limitTo:5) -->
+           </ul>
+          </details>
+          <details class="show-supported-example" data-ng-open="showSampleFiles" open="open">
+           <summary class="summary-supported-examples" data-ng-click="$event.preventDefault();showSampleFiles = !showSampleFiles; recentFilesOpen = false;">Supported formats and sample files</summary>
+           <div class="file-upload-samples ng-isolate-scope" data-wa-file-samples="exampleFiles" data-show-file-samples="showSampleFiles">
+            <!-- ngRepeat: category in ::exampleFiles.Categories -->
+            <div class="format-section ng-scope" data-ng-repeat="category in ::exampleFiles.Categories">
+             <div class="format-section-title ng-binding">
+              Basic formats
+             </div>
+             <ul class="format-section-list" data-wa-sample-format="">
+              <!-- ngRepeat: filetype in ::category.ShownList -->
+              <li data-ng-repeat="filetype in ::category.ShownList" class="ng-scope"><a data-ng-click="setSampleInputFile(filetype)" class="ng-binding">Text</a></li>
+              <!-- end ngRepeat: filetype in ::category.ShownList -->
+              <li data-ng-repeat="filetype in ::category.ShownList" class="ng-scope"><a data-ng-click="setSampleInputFile(filetype)" class="ng-binding">Binary</a></li>
+              <!-- end ngRepeat: filetype in ::category.ShownList -->
+              <li data-ng-repeat="filetype in ::category.ShownList" class="ng-scope"><a data-ng-click="setSampleInputFile(filetype)" class="ng-binding">XLS</a></li>
+              <!-- end ngRepeat: filetype in ::category.ShownList -->
+              <!-- ngRepeat: filetype in ::category.MoreList -->
+              <li data-ng-repeat="filetype in ::category.MoreList" class="ng-scope"><a data-ng-click="setSampleInputFile(filetype)" class="ng-binding">TSV</a></li>
+              <!-- end ngRepeat: filetype in ::category.MoreList -->
+              <li data-ng-repeat="filetype in ::category.MoreList" class="ng-scope"><a data-ng-click="setSampleInputFile(filetype)" class="ng-binding">CSV</a></li>
+              <!-- end ngRepeat: filetype in ::category.MoreList -->
+              <li data-ng-repeat="filetype in ::category.MoreList" class="ng-scope"><a data-ng-click="setSampleInputFile(filetype)" class="ng-binding">XLSX</a></li>
+              <!-- end ngRepeat: filetype in ::category.MoreList -->
+             </ul>
+            </div>
+            <!-- end ngRepeat: category in ::exampleFiles.Categories -->
+            <div class="format-section ng-scope" data-ng-repeat="category in ::exampleFiles.Categories">
+             <div class="format-section-title ng-binding">
+              Image formats
+             </div>
+             <ul class="format-section-list" data-wa-sample-format="">
+              <!-- ngRepeat: filetype in ::category.ShownList -->
+              <li data-ng-repeat="filetype in ::category.ShownList" class="ng-scope"><a data-ng-click="setSampleInputFile(filetype)" class="ng-binding">GIF</a></li>
+              <!-- end ngRepeat: filetype in ::category.ShownList -->
+              <li data-ng-repeat="filetype in ::category.ShownList" class="ng-scope"><a data-ng-click="setSampleInputFile(filetype)" class="ng-binding">JPEG</a></li>
+              <!-- end ngRepeat: filetype in ::category.ShownList -->
+              <li data-ng-repeat="filetype in ::category.ShownList" class="ng-scope"><a data-ng-click="setSampleInputFile(filetype)" class="ng-binding">PNG</a></li>
+              <!-- end ngRepeat: filetype in ::category.ShownList -->
+              <!-- ngRepeat: filetype in ::category.MoreList -->
+              <li data-ng-repeat="filetype in ::category.MoreList" class="ng-scope"><a data-ng-click="setSampleInputFile(filetype)" class="ng-binding">TIFF</a></li>
+              <!-- end ngRepeat: filetype in ::category.MoreList -->
+              <li data-ng-repeat="filetype in ::category.MoreList" class="ng-scope"><a data-ng-click="setSampleInputFile(filetype)" class="ng-binding">JPEG2000</a></li>
+              <!-- end ngRepeat: filetype in ::category.MoreList -->
+              <li data-ng-repeat="filetype in ::category.MoreList" class="ng-scope"><a data-ng-click="setSampleInputFile(filetype)" class="ng-binding">BMP</a></li>
+              <!-- end ngRepeat: filetype in ::category.MoreList -->
+              <li data-ng-repeat="filetype in ::category.MoreList" class="ng-scope"><a data-ng-click="setSampleInputFile(filetype)" class="ng-binding">ACO</a></li>
+              <!-- end ngRepeat: filetype in ::category.MoreList -->
+              <li data-ng-repeat="filetype in ::category.MoreList" class="ng-scope"><a data-ng-click="setSampleInputFile(filetype)" class="ng-binding">TGA</a></li>
+              <!-- end ngRepeat: filetype in ::category.MoreList -->
+              <li data-ng-repeat="filetype in ::category.MoreList" class="ng-scope"><a data-ng-click="setSampleInputFile(filetype)" class="ng-binding">ICO</a></li>
+              <!-- end ngRepeat: filetype in ::category.MoreList -->
+              <li data-ng-repeat="filetype in ::category.MoreList" class="ng-scope"><a data-ng-click="setSampleInputFile(filetype)" class="ng-binding">PCX</a></li>
+              <!-- end ngRepeat: filetype in ::category.MoreList -->
+              <li data-ng-repeat="filetype in ::category.MoreList" class="ng-scope"><a data-ng-click="setSampleInputFile(filetype)" class="ng-binding">PBM</a></li>
+              <!-- end ngRepeat: filetype in ::category.MoreList -->
+              <li data-ng-repeat="filetype in ::category.MoreList" class="ng-scope"><a data-ng-click="setSampleInputFile(filetype)" class="ng-binding">PGM</a></li>
+              <!-- end ngRepeat: filetype in ::category.MoreList -->
+              <li data-ng-repeat="filetype in ::category.MoreList" class="ng-scope"><a data-ng-click="setSampleInputFile(filetype)" class="ng-binding">PNM</a></li>
+              <!-- end ngRepeat: filetype in ::category.MoreList -->
+              <li data-ng-repeat="filetype in ::category.MoreList" class="ng-scope"><a data-ng-click="setSampleInputFile(filetype)" class="ng-binding">PPM</a></li>
+              <!-- end ngRepeat: filetype in ::category.MoreList -->
+              <li data-ng-repeat="filetype in ::category.MoreList" class="ng-scope"><a data-ng-click="setSampleInputFile(filetype)" class="ng-binding">PXR</a></li>
+              <!-- end ngRepeat: filetype in ::category.MoreList -->
+              <li data-ng-repeat="filetype in ::category.MoreList" class="ng-scope"><a data-ng-click="setSampleInputFile(filetype)" class="ng-binding">SCT</a></li>
+              <!-- end ngRepeat: filetype in ::category.MoreList -->
+              <li data-ng-repeat="filetype in ::category.MoreList" class="ng-scope"><a data-ng-click="setSampleInputFile(filetype)" class="ng-binding">XBM</a></li>
+              <!-- end ngRepeat: filetype in ::category.MoreList -->
+             </ul>
+            </div>
+            <!-- end ngRepeat: category in ::exampleFiles.Categories -->
+            <div class="format-section ng-scope" data-ng-repeat="category in ::exampleFiles.Categories">
+             <div class="format-section-title ng-binding">
+              Vector graphics formats
+             </div>
+             <ul class="format-section-list" data-wa-sample-format="">
+              <!-- ngRepeat: filetype in ::category.ShownList -->
+              <li data-ng-repeat="filetype in ::category.ShownList" class="ng-scope"><a data-ng-click="setSampleInputFile(filetype)" class="ng-binding">PDF</a></li>
+              <!-- end ngRepeat: filetype in ::category.ShownList -->
+              <li data-ng-repeat="filetype in ::category.ShownList" class="ng-scope"><a data-ng-click="setSampleInputFile(filetype)" class="ng-binding">EPS</a></li>
+              <!-- end ngRepeat: filetype in ::category.ShownList -->
+              <!-- ngRepeat: filetype in ::category.MoreList -->
+             </ul>
+            </div>
+            <!-- end ngRepeat: category in ::exampleFiles.Categories -->
+            <div class="format-section ng-scope" data-ng-repeat="category in ::exampleFiles.Categories">
+             <div class="format-section-title ng-binding">
+              3D geometry &amp; modeling formats
+             </div>
+             <ul class="format-section-list" data-wa-sample-format="">
+              <!-- ngRepeat: filetype in ::category.ShownList -->
+              <li data-ng-repeat="filetype in ::category.ShownList" class="ng-scope"><a data-ng-click="setSampleInputFile(filetype)" class="ng-binding">PLY</a></li>
+              <!-- end ngRepeat: filetype in ::category.ShownList -->
+              <li data-ng-repeat="filetype in ::category.ShownList" class="ng-scope"><a data-ng-click="setSampleInputFile(filetype)" class="ng-binding">OFF</a></li>
+              <!-- end ngRepeat: filetype in ::category.ShownList -->
+              <li data-ng-repeat="filetype in ::category.ShownList" class="ng-scope"><a data-ng-click="setSampleInputFile(filetype)" class="ng-binding">NOFF</a></li>
+              <!-- end ngRepeat: filetype in ::category.ShownList -->
+              <li data-ng-repeat="filetype in ::category.ShownList" class="ng-scope"><a data-ng-click="setSampleInputFile(filetype)" class="ng-binding">BYU</a></li>
+              <!-- end ngRepeat: filetype in ::category.ShownList -->
+              <li data-ng-repeat="filetype in ::category.ShownList" class="ng-scope"><a data-ng-click="setSampleInputFile(filetype)" class="ng-binding">OBJ</a></li>
+              <!-- end ngRepeat: filetype in ::category.ShownList -->
+              <!-- ngRepeat: filetype in ::category.MoreList -->
+              <li data-ng-repeat="filetype in ::category.MoreList" class="ng-scope"><a data-ng-click="setSampleInputFile(filetype)" class="ng-binding">VTK</a></li>
+              <!-- end ngRepeat: filetype in ::category.MoreList -->
+              <li data-ng-repeat="filetype in ::category.MoreList" class="ng-scope"><a data-ng-click="setSampleInputFile(filetype)" class="ng-binding">JVX</a></li>
+              <!-- end ngRepeat: filetype in ::category.MoreList -->
+              <li data-ng-repeat="filetype in ::category.MoreList" class="ng-scope"><a data-ng-click="setSampleInputFile(filetype)" class="ng-binding">LWO</a></li>
+              <!-- end ngRepeat: filetype in ::category.MoreList -->
+              <li data-ng-repeat="filetype in ::category.MoreList" class="ng-scope"><a data-ng-click="setSampleInputFile(filetype)" class="ng-binding">3DS</a></li>
+              <!-- end ngRepeat: filetype in ::category.MoreList -->
+              <li data-ng-repeat="filetype in ::category.MoreList" class="ng-scope"><a data-ng-click="setSampleInputFile(filetype)" class="ng-binding">RIB</a></li>
+              <!-- end ngRepeat: filetype in ::category.MoreList -->
+              <li data-ng-repeat="filetype in ::category.MoreList" class="ng-scope"><a data-ng-click="setSampleInputFile(filetype)" class="ng-binding">DXF</a></li>
+              <!-- end ngRepeat: filetype in ::category.MoreList -->
+              <li data-ng-repeat="filetype in ::category.MoreList" class="ng-scope"><a data-ng-click="setSampleInputFile(filetype)" class="ng-binding">STL</a></li>
+              <!-- end ngRepeat: filetype in ::category.MoreList -->
+             </ul>
+            </div>
+            <!-- end ngRepeat: category in ::exampleFiles.Categories -->
+            <div class="format-section ng-scope" data-ng-repeat="category in ::exampleFiles.Categories">
+             <div class="format-section-title ng-binding">
+              Audio formats
+             </div>
+             <ul class="format-section-list" data-wa-sample-format="">
+              <!-- ngRepeat: filetype in ::category.ShownList -->
+              <li data-ng-repeat="filetype in ::category.ShownList" class="ng-scope"><a data-ng-click="setSampleInputFile(filetype)" class="ng-binding">AIFF</a></li>
+              <!-- end ngRepeat: filetype in ::category.ShownList -->
+              <li data-ng-repeat="filetype in ::category.ShownList" class="ng-scope"><a data-ng-click="setSampleInputFile(filetype)" class="ng-binding">FLAC</a></li>
+              <!-- end ngRepeat: filetype in ::category.ShownList -->
+              <li data-ng-repeat="filetype in ::category.ShownList" class="ng-scope"><a data-ng-click="setSampleInputFile(filetype)" class="ng-binding">WAV</a></li>
+              <!-- end ngRepeat: filetype in ::category.ShownList -->
+              <!-- ngRepeat: filetype in ::category.MoreList -->
+              <li data-ng-repeat="filetype in ::category.MoreList" class="ng-scope"><a data-ng-click="setSampleInputFile(filetype)" class="ng-binding">AU</a></li>
+              <!-- end ngRepeat: filetype in ::category.MoreList -->
+              <li data-ng-repeat="filetype in ::category.MoreList" class="ng-scope"><a data-ng-click="setSampleInputFile(filetype)" class="ng-binding">SND</a></li>
+              <!-- end ngRepeat: filetype in ::category.MoreList -->
+              <li data-ng-repeat="filetype in ::category.MoreList" class="ng-scope"><a data-ng-click="setSampleInputFile(filetype)" class="ng-binding">WAVE64</a></li>
+              <!-- end ngRepeat: filetype in ::category.MoreList -->
+             </ul>
+            </div>
+            <!-- end ngRepeat: category in ::exampleFiles.Categories -->
+            <div class="format-section ng-scope" data-ng-repeat="category in ::exampleFiles.Categories">
+             <div class="format-section-title ng-binding">
+              Scientific &amp; medical formats
+             </div>
+             <ul class="format-section-list" data-wa-sample-format="">
+              <!-- ngRepeat: filetype in ::category.ShownList -->
+              <li data-ng-repeat="filetype in ::category.ShownList" class="ng-scope"><a data-ng-click="setSampleInputFile(filetype)" class="ng-binding">HDF</a></li>
+              <!-- end ngRepeat: filetype in ::category.ShownList -->
+              <li data-ng-repeat="filetype in ::category.ShownList" class="ng-scope"><a data-ng-click="setSampleInputFile(filetype)" class="ng-binding">HDF5</a></li>
+              <!-- end ngRepeat: filetype in ::category.ShownList -->
+              <li data-ng-repeat="filetype in ::category.ShownList" class="ng-scope"><a data-ng-click="setSampleInputFile(filetype)" class="ng-binding">NASACDF</a></li>
+              <!-- end ngRepeat: filetype in ::category.ShownList -->
+              <li data-ng-repeat="filetype in ::category.ShownList" class="ng-scope"><a data-ng-click="setSampleInputFile(filetype)" class="ng-binding">NetCDF</a></li>
+              <!-- end ngRepeat: filetype in ::category.ShownList -->
+              <li data-ng-repeat="filetype in ::category.ShownList" class="ng-scope"><a data-ng-click="setSampleInputFile(filetype)" class="ng-binding">FITS</a></li>
+              <!-- end ngRepeat: filetype in ::category.ShownList -->
+              <li data-ng-repeat="filetype in ::category.ShownList" class="ng-scope"><a data-ng-click="setSampleInputFile(filetype)" class="ng-binding">DICOM</a></li>
+              <!-- end ngRepeat: filetype in ::category.ShownList -->
+              <!-- ngRepeat: filetype in ::category.MoreList -->
+              <li data-ng-repeat="filetype in ::category.MoreList" class="ng-scope"><a data-ng-click="setSampleInputFile(filetype)" class="ng-binding">BDF</a></li>
+              <!-- end ngRepeat: filetype in ::category.MoreList -->
+              <li data-ng-repeat="filetype in ::category.MoreList" class="ng-scope"><a data-ng-click="setSampleInputFile(filetype)" class="ng-binding">EDF</a></li>
+              <!-- end ngRepeat: filetype in ::category.MoreList -->
+              <li data-ng-repeat="filetype in ::category.MoreList" class="ng-scope"><a data-ng-click="setSampleInputFile(filetype)" class="ng-binding">GRIB</a></li>
+              <!-- end ngRepeat: filetype in ::category.MoreList -->
+             </ul>
+            </div>
+            <!-- end ngRepeat: category in ::exampleFiles.Categories -->
+            <div class="format-section ng-scope" data-ng-repeat="category in ::exampleFiles.Categories">
+             <div class="format-section-title ng-binding">
+              Chemical formats
+             </div>
+             <ul class="format-section-list" data-wa-sample-format="">
+              <!-- ngRepeat: filetype in ::category.ShownList -->
+              <li data-ng-repeat="filetype in ::category.ShownList" class="ng-scope"><a data-ng-click="setSampleInputFile(filetype)" class="ng-binding">XYZ</a></li>
+              <!-- end ngRepeat: filetype in ::category.ShownList -->
+              <li data-ng-repeat="filetype in ::category.ShownList" class="ng-scope"><a data-ng-click="setSampleInputFile(filetype)" class="ng-binding">MOL</a></li>
+              <!-- end ngRepeat: filetype in ::category.ShownList -->
+              <li data-ng-repeat="filetype in ::category.ShownList" class="ng-scope"><a data-ng-click="setSampleInputFile(filetype)" class="ng-binding">MOL2</a></li>
+              <!-- end ngRepeat: filetype in ::category.ShownList -->
+              <li data-ng-repeat="filetype in ::category.ShownList" class="ng-scope"><a data-ng-click="setSampleInputFile(filetype)" class="ng-binding">SDF</a></li>
+              <!-- end ngRepeat: filetype in ::category.ShownList -->
+              <!-- ngRepeat: filetype in ::category.MoreList -->
+              <li data-ng-repeat="filetype in ::category.MoreList" class="ng-scope"><a data-ng-click="setSampleInputFile(filetype)" class="ng-binding">SMILES</a></li>
+              <!-- end ngRepeat: filetype in ::category.MoreList -->
+              <li data-ng-repeat="filetype in ::category.MoreList" class="ng-scope"><a data-ng-click="setSampleInputFile(filetype)" class="ng-binding">FASTA</a></li>
+              <!-- end ngRepeat: filetype in ::category.MoreList -->
+              <li data-ng-repeat="filetype in ::category.MoreList" class="ng-scope"><a data-ng-click="setSampleInputFile(filetype)" class="ng-binding">GenBank</a></li>
+              <!-- end ngRepeat: filetype in ::category.MoreList -->
+              <li data-ng-repeat="filetype in ::category.MoreList" class="ng-scope"><a data-ng-click="setSampleInputFile(filetype)" class="ng-binding">NEXUS</a></li>
+              <!-- end ngRepeat: filetype in ::category.MoreList -->
+              <li data-ng-repeat="filetype in ::category.MoreList" class="ng-scope"><a data-ng-click="setSampleInputFile(filetype)" class="ng-binding">PDB</a></li>
+              <!-- end ngRepeat: filetype in ::category.MoreList -->
+             </ul>
+            </div>
+            <!-- end ngRepeat: category in ::exampleFiles.Categories -->
+            <div class="format-section ng-scope" data-ng-repeat="category in ::exampleFiles.Categories">
+             <div class="format-section-title ng-binding">
+              Mathematical formats
+             </div>
+             <ul class="format-section-list" data-wa-sample-format="">
+              <!-- ngRepeat: filetype in ::category.ShownList -->
+              <li data-ng-repeat="filetype in ::category.ShownList" class="ng-scope"><a data-ng-click="setSampleInputFile(filetype)" class="ng-binding">Graphlet</a></li>
+              <!-- end ngRepeat: filetype in ::category.ShownList -->
+              <li data-ng-repeat="filetype in ::category.ShownList" class="ng-scope"><a data-ng-click="setSampleInputFile(filetype)" class="ng-binding">DOT</a></li>
+              <!-- end ngRepeat: filetype in ::category.ShownList -->
+              <li data-ng-repeat="filetype in ::category.ShownList" class="ng-scope"><a data-ng-click="setSampleInputFile(filetype)" class="ng-binding">GraphML</a></li>
+              <!-- end ngRepeat: filetype in ::category.ShownList -->
+              <li data-ng-repeat="filetype in ::category.ShownList" class="ng-scope"><a data-ng-click="setSampleInputFile(filetype)" class="ng-binding">GXL</a></li>
+              <!-- end ngRepeat: filetype in ::category.ShownList -->
+              <!-- ngRepeat: filetype in ::category.MoreList -->
+              <li data-ng-repeat="filetype in ::category.MoreList" class="ng-scope"><a data-ng-click="setSampleInputFile(filetype)" class="ng-binding">DIMACS</a></li>
+              <!-- end ngRepeat: filetype in ::category.MoreList -->
+              <li data-ng-repeat="filetype in ::category.MoreList" class="ng-scope"><a data-ng-click="setSampleInputFile(filetype)" class="ng-binding">Graph6</a></li>
+              <!-- end ngRepeat: filetype in ::category.MoreList -->
+              <li data-ng-repeat="filetype in ::category.MoreList" class="ng-scope"><a data-ng-click="setSampleInputFile(filetype)" class="ng-binding">Sparse6</a></li>
+              <!-- end ngRepeat: filetype in ::category.MoreList -->
+              <li data-ng-repeat="filetype in ::category.MoreList" class="ng-scope"><a data-ng-click="setSampleInputFile(filetype)" class="ng-binding">LEDA</a></li>
+              <!-- end ngRepeat: filetype in ::category.MoreList -->
+              <li data-ng-repeat="filetype in ::category.MoreList" class="ng-scope"><a data-ng-click="setSampleInputFile(filetype)" class="ng-binding">Pajek</a></li>
+              <!-- end ngRepeat: filetype in ::category.MoreList -->
+              <li data-ng-repeat="filetype in ::category.MoreList" class="ng-scope"><a data-ng-click="setSampleInputFile(filetype)" class="ng-binding">TGF</a></li>
+              <!-- end ngRepeat: filetype in ::category.MoreList -->
+              <li data-ng-repeat="filetype in ::category.MoreList" class="ng-scope"><a data-ng-click="setSampleInputFile(filetype)" class="ng-binding">MAT</a></li>
+              <!-- end ngRepeat: filetype in ::category.MoreList -->
+              <li data-ng-repeat="filetype in ::category.MoreList" class="ng-scope"><a data-ng-click="setSampleInputFile(filetype)" class="ng-binding">MTX</a></li>
+              <!-- end ngRepeat: filetype in ::category.MoreList -->
+              <li data-ng-repeat="filetype in ::category.MoreList" class="ng-scope"><a data-ng-click="setSampleInputFile(filetype)" class="ng-binding">HarwellBoeing</a></li>
+              <!-- end ngRepeat: filetype in ::category.MoreList -->
+             </ul>
+            </div>
+            <!-- end ngRepeat: category in ::exampleFiles.Categories -->
+            <div class="format-section ng-scope" data-ng-repeat="category in ::exampleFiles.Categories">
+             <div class="format-section-title ng-binding">
+              Document formats
+             </div>
+             <ul class="format-section-list" data-wa-sample-format="">
+              <!-- ngRepeat: filetype in ::category.ShownList -->
+              <li data-ng-repeat="filetype in ::category.ShownList" class="ng-scope"><a data-ng-click="setSampleInputFile(filetype)" class="ng-binding">HTML</a></li>
+              <!-- end ngRepeat: filetype in ::category.ShownList -->
+              <li data-ng-repeat="filetype in ::category.ShownList" class="ng-scope"><a data-ng-click="setSampleInputFile(filetype)" class="ng-binding">PDF</a></li>
+              <!-- end ngRepeat: filetype in ::category.ShownList -->
+              <li data-ng-repeat="filetype in ::category.ShownList" class="ng-scope"><a data-ng-click="setSampleInputFile(filetype)" class="ng-binding">MBOX</a></li>
+              <!-- end ngRepeat: filetype in ::category.ShownList -->
+              <!-- ngRepeat: filetype in ::category.MoreList -->
+             </ul>
+            </div>
+            <!-- end ngRepeat: category in ::exampleFiles.Categories -->
+            <div class="format-section ng-scope" data-ng-repeat="category in ::exampleFiles.Categories">
+             <div class="format-section-title ng-binding">
+              XML formats
+             </div>
+             <ul class="format-section-list" data-wa-sample-format="">
+              <!-- ngRepeat: filetype in ::category.ShownList -->
+              <li data-ng-repeat="filetype in ::category.ShownList" class="ng-scope"><a data-ng-click="setSampleInputFile(filetype)" class="ng-binding">XML</a></li>
+              <!-- end ngRepeat: filetype in ::category.ShownList -->
+              <li data-ng-repeat="filetype in ::category.ShownList" class="ng-scope"><a data-ng-click="setSampleInputFile(filetype)" class="ng-binding">XHTML</a></li>
+              <!-- end ngRepeat: filetype in ::category.ShownList -->
+              <li data-ng-repeat="filetype in ::category.ShownList" class="ng-scope"><a data-ng-click="setSampleInputFile(filetype)" class="ng-binding">MathML</a></li>
+              <!-- end ngRepeat: filetype in ::category.ShownList -->
+              <!-- ngRepeat: filetype in ::category.MoreList -->
+              <li data-ng-repeat="filetype in ::category.MoreList" class="ng-scope"><a data-ng-click="setSampleInputFile(filetype)" class="ng-binding">XHTMLMathML</a></li>
+              <!-- end ngRepeat: filetype in ::category.MoreList -->
+              <li data-ng-repeat="filetype in ::category.MoreList" class="ng-scope"><a data-ng-click="setSampleInputFile(filetype)" class="ng-binding">ExpressionML</a></li>
+              <!-- end ngRepeat: filetype in ::category.MoreList -->
+             </ul>
+            </div>
+            <!-- end ngRepeat: category in ::exampleFiles.Categories -->
+           </div>
+           <div data-ng-show="showSampleFiles &amp;&amp; trayType === 'file'" class="sample-pointer ng-hide"></div>
+          </details>
+         </div>
+        </section>
+       </ng-include>
+       <!-- ngInclude: -->
+       <ng-include src=" 'input-form/special-input/special-input-tray/data-input/data-input.html' " class="ng-scope">
+        <section class="data-input file-upload-input special-input-tray ng-scope" id="data-input" wa-special-input-tray="data">
+         <div id="data-input-heading">
+          <h2 id="upload-tray-title">Data Input <span class="close-input-tray" data-ng-click="updateTray('')">&times;</span></h2>
+         </div>
+         <div data-wa-pro-feature="trayType" data-wa-pro-feature-close-button="false" data-wa-pro-feature-placement="false" data-wa-pro-feature-append-to-body="false" data-wa-pro-feature-is-open="false" class="ng-isolate-scope"></div>
+         <div class="input-upload disabled" data-ng-class="{'disabled' : !isPro}">
+          <div class="data-input-panel">
+           <div class="data-input-instr">
+            Give numeric, tabular, or other data. 
+            <a data-more-info-data-input="updateTray" data-more-info-data-input-placement="false" data-more-info-data-input-append-to-body="false" data-more-info-data-input-close-button="true" data-more-info-data-input-enable="false" class="ng-isolate-scope">More Information &raquo;</a>
+           </div>
+           <div class="data-input-text-container">
+            <textarea data-allow-tab-input="" data-ng-model="$parent.dataInputText" data-ng-disabled="!isPro" class="ng-pristine ng-untouched ng-valid ng-empty" disabled="disabled"></textarea>
+           </div>
+           <div class="button-row">
+            <button type="button" class="bubblebtn use-button disabled" data-ng-class="{ 'disabled' : !isPro || !dataHasChanged || !dataInputText}" data-ng-click="inputData(dataInputText)">Use without Saving</button> 
+            <button type="button" class="wa-button save-later-button ng-isolate-scope disabled" data-ng-class="{ 'disabled' : !isPro || !dataInputText }" data-ng-disabled="!isPro || !dataInputText" data-save-data-input="{ 'content' : dataInputText , 'createDataFile' : createDataFile, 'currentFileName' : currentlyEditingData }" data-save-data-input-placement="top" data-save-data-input-append-to-body="false" data-save-data-input-close-button="true" data-ng-show="!currentlyEditingData" disabled="disabled">Save for Later Use</button> 
+            <button type="button" class="wa-button save-button ng-hide" data-ng-show="currentlyEditingData" data-ng-disabled="!isPro || !dataHasChanged || !dataInputText" data-ng-click="createDataFile(dataInputText, currentlyEditingData)" disabled="disabled">Save</button>
+           </div>
+           <a class="to-upload-tray" data-ng-click="!isPro || updateTray('file')">Upload a file &raquo;</a>
+           <div class="legal-links">
+            <a href="" target="_blank">Terms</a> | 
+            <!-- www.wolframalpha.com/termsofuse/ -->
+            <a href="" target="_blank">Privacy</a>
+            <!-- www.wolframalpha.com/privacypolicy.html -->
+           </div>
+          </div>
+         </div>
+         <div class="data-already-ready already-ready">
+          <span class="all-uploads ng-isolate-scope ng-hide" data-ng-show="recentData.length &gt; 0 &amp;&amp; isPro" data-account-lightbox="'uploads-data'" data-account-lightbox-placement="false" data-account-lightbox-overlay="true" data-account-lightbox-close-button="true">All data &raquo;</span>
+          <details class="recent-uploads recent-data ng-hide" data-ng-class="{ 'is-loading' : loadRecentData }" data-ng-open="$parent.showRecentData" data-ng-show="(loadRecentData || recentData.length &gt; 0) &amp;&amp; isPro" data-ng-init="clickedFileIndex = -1">
+           <summary data-ng-click="$parent.showRecentData = !showRecentData;$parent.showSampleData = false;$event.preventDefault();">Recent data</summary>
+           <ul class="file-list">
+            <!-- ngRepeat: fileObj in recentData | limitTo:15 track by $index -->
+           </ul>
+          </details>
+          <details data-ng-open="showSampleData" data-ng-init="clickedFileIndex = -1" open="open">
+           <summary class="showSampleData" data-ng-click="$parent.showSampleData = !showSampleData;$parent.showRecentData = false; $event.preventDefault();">Sample data</summary>
+           <!-- ngIf: showSampleData && trayType === 'data' -->
+          </details>
+         </div>
+        </section>
+       </ng-include>
+       <div data-wa-duplicate-name-popup="duplicateNameFile" data-wa-file-type="trayType" data-wa-do-rename="setFileInput" class="ng-isolate-scope">
+        <!-- ngIf: fileToRename -->
+       </div>
+       <div data-wa-file-upload-status-popup="uploading" data-wa-file-upload-type="trayType" class="ng-isolate-scope">
+        <div class="file-input-lightbox file-status-popup-false" data-ng-class="'file-status-popup-' + upload.status">
+         <a class="close" data-ng-click="closeStatusPopup()">x</a>
+         <div class="file-status-uploading ng-binding"></div>
+         <div class="file-status-size-error">
+          <h3 class="ng-binding">Sorry, this file exceeds your current upload limit of .</h3>
+          <div class="pro-size-message" data-ng-show="!isProPremium">
+           <div class="premium-message">
+            Increase your limit to 5MB with Pro Premium.
+           </div>
+           <a href="" class="alpha-button primary small" target="_blank">Upgrade to Pro Premium</a> 
+           <!-- billing.wolfram.com/api/addtocart.html?peid=wa-propremium -->
+           <a href="" class="link" target="_blank">Learn more about Pro Premium &raquo;</a>
+           <!-- www.wolframalpha.com/pro/pricing/#ProPremium -->
+          </div>
+          <div class="pro-premium-size-message ng-hide" data-ng-show="isProPremium">
+           <a href="" class="link" target="_blank">Find out about unlimited file imports with Wolfram desktop systems &raquo;</a>
+           <!-- www.wolfram.com/mathematica/ -->
+          </div>
+         </div>
+         <div class="file-status-remote-error">
+          <h3>Remote file could not be found.</h3>
+          <span>Please check your URL and try again.</span>
+         </div>
+        </div>
+        <div class="uploading-overlay lightbox-overlay" data-ng-class="{uploading : upload.status === 'uploading'}"></div>
+       </div>
+      
+      </section>
+     </form>
+     <div class="lightbox-overlay" tray-lightbox-overlay=""></div>
+    </div>
+   </wa-input-form>
+   <!-- end ngIf: settingsClass != 'settings' --> 
+   <!-- ngView: --> 
+   <!-- ngIf: bgClass == 'blue-circles' && routeClass == 'home' && settingsClass != 'settings' -->
+   <wa-example-pods data-ng-if="bgClass == 'blue-circles' &amp;&amp; routeClass == 'home' &amp;&amp; settingsClass != 'settings'" class="ng-scope">
+    <div data-ng-class="[bgUpdated, ctrl.podImagesLoaded &lt; 32 ? null : 'example-pods-loaded']" id="explore-examples" class="example-pods-loaded">
+     <!-- ngIf: bgUpdated === 'updated' -->
+     <!-- ngIf: bgUpdated !== 'updated' -->
+     <!-- <img data-ng-if="bgUpdated !== 'updated'" data-ng-src="//www.wolframcdn.com/homepage/explore-examples-text.svg" style="height:18px; width:397px" class="ng-scope" src="./Disater tracking/explore-examples-text.svg" /> -->
+     <!-- end ngIf: bgUpdated !== 'updated' -->
+    </div>
+    <section data-ng-class="[bgUpdated, ctrl.podImagesLoaded &lt; 32 ? null : 'example-pods-loaded']" id="example-pods" class="example-pods-loaded">
+     <ul>
+      <li>
+       <div data-ng-click="ctrl.redirectExamples('examples/Math.html')" class="container one-line">
+        <img data-ng-src="//www.wolframcdn.com/homepage/example-pods/Mathematics-icon.svg" src="./Disater tracking/Mathematics-icon.svg" />
+        <div class="example-title">
+         <div class="title-container">
+          国际新闻
+         </div>
+        </div>
+       </div></li>
+      <li>
+       <div data-ng-click="ctrl.redirectExamples('examples/StepByStepSolutions.html')" class="container two-lines">
+        <img data-ng-src="//www.wolframcdn.com/homepage/example-pods/StepbystepSolutions-icon.svg" src="./Disater tracking/StepbystepSolutions-icon.svg" />
+        <div class="example-title">
+         <div class="title-container">
+          恐怖袭击
+         </div>
+        </div>
+       </div></li>
+      <li>
+       <div data-ng-click="ctrl.redirectExamples('examples/WordsAndLinguistics.html')" class="container two-lines">
+        <img data-ng-src="//www.wolframcdn.com/homepage/example-pods/WordsLinguistics-icon.svg" src="./Disater tracking/WordsLinguistics-icon.svg" />
+        <div class="example-title">
+         <div class="title-container">
+          地震灾害
+         </div>
+        </div>
+       </div></li>
+      <li>
+       <div data-ng-click="ctrl.redirectExamples('examples/UnitsMeasures.html')" class="container two-lines">
+        <img data-ng-src="//www.wolframcdn.com/homepage/example-pods/UnitsMeasures-icon.svg" src="./Disater tracking/UnitsMeasures-icon.svg" />
+        <div class="example-title">
+         <div class="title-container">
+          军事政变
+         </div>
+        </div>
+       </div></li>
+      <li>
+       <div data-ng-click="ctrl.redirectExamples('examples/Statistics.html')" class="container two-lines">
+        <img data-ng-src="//www.wolframcdn.com/homepage/example-pods/StatisticalDataAnalysis-icon.svg" src="./Disater tracking/StatisticalDataAnalysis-icon.svg" />
+        <div class="example-title">
+         <div class="title-container">
+          国内新闻
+         </div>
+        </div>
+       </div></li>
+     </ul>
+    </section>
+   </wa-example-pods>
+   <!-- end ngIf: bgClass == 'blue-circles' && routeClass == 'home' && settingsClass != 'settings' --> 
+  </div> 
+  <!-- ngIf: (components.debuggingSection ||
+            (components.debuggingSectionToggle && debugParam)) && (routeClass === 'results-view') --> 
+  <div id="wa-lightbox-overlay"></div> 
+  
+
+  <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+  <script type="text/javascript" src="js/npm.js"></script>
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script async="" src="./Disater tracking/analytics.js"></script>
+  <script async="" src="./Disater tracking/wal.js"></script>
+  <script src="./Disater tracking/wa.min.js"></script>
+ </body>
+</html>
