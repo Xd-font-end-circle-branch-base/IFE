@@ -45,7 +45,7 @@ OK！下载完成！重新安装，一直点next就好。安装好了切换到�
 
 OK！打开你的`git-bash`,在任意文件夹下面，输入
 
-下面的damonare是我的昵称，在你克隆的时候要换成你的githun账号路径
+下面的damonare是我的昵称，在你克隆的时候要换成**你的github账号路径**
 ```git
 $ git clone git@github.com:damonare/IFE-1.git
 ```
@@ -71,11 +71,11 @@ $ cd /c/Users/name/IFE
 进入你的文件夹，然后推送本地文件到你的仓库，使用以下命令：
 
 ```git
-$ git add *
-$ git commit -m 'explain'
+$ git add .
+$ git commit -m '任意字符'
 $ git push origin master
 ```
-
+tips:经过测试，发现最新版git 2.10.2和我2.6.2存在差异，最新版git add * 不会添加删除文件进暂存区，在git 2.x版本以后更稳妥的办法是git add .或者git add -A，可以将全部变动添加进暂存区。
 
 ![这里写图片描述](http://img.blog.csdn.net/20161118174647342)
 
