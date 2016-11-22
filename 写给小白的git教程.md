@@ -71,7 +71,7 @@ $ cd /c/Users/name/IFE
 进入你的文件夹，然后推送本地文件到你的仓库，使用以下命令：
 
 ```git
-$ git add *
+$ git add -A
 $ git commit -m 'explain'
 $ git push origin master
 ```
