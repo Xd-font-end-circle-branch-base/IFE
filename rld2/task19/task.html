@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>队列</title>
+    </head>
+    <style>
+        #army{
+            position: relative;
+            height:120px;
+            width:1080px;
+        }
+
+        #army .span{
+            position: absolute;
+            bottom:0;
+            background: red;
+            width: 6px;
+        }
+
+    </style>
+    <body>
+        <input id="input" type="text" />
+        <div id="select">
+            <input name="left_in" type="button" value="左侧入"/>
+            <input name="right_in" type="button" value="右侧入"/>
+            <input name="left_out" type="button" value="左侧出"/>
+            <input name="right_out" type="button" value="右侧出"/>
+            <input name="bubbling" type="button" value="冒泡"/>
+        </div>
+
+        <div id="army">
+
+        </div>
+        <script src=task.js></script>
+    </body>
+</html>
