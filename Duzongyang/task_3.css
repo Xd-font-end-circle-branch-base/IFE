@@ -1,0 +1,32 @@
+body{
+	padding: 20px;
+	font-family: "微软雅黑"；
+	font-size:15px;
+}
+.wrapper{
+	margin:0px;
+	padding: 20px;
+	background: #eee;
+	border:1px soild #999;
+	overflow: auto;
+	min-width: 600px;
+}
+.right{
+  width: 120px;
+  float: right;
+  background: #fff;
+  border: 1px solid #999;
+}
+.middle{
+  padding: 20px;
+  margin-left: 220px;
+  margin-right: 140px;
+  background: #fff;
+  border: 1px solid #999;
+}
+.left{
+  float: left;
+  padding: 20px;
+  width: 160px;
+  background: #fff;
+  border: 1px solid #999;

@@ -1,0 +1,105 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    font-family: "微软雅黑";
+    font-size: 14px;
+    background: #DEDEDE;
+    display: block;
+}
+article,aside{
+    margin:20px;
+    background-color: #FFFFFF;
+    box-shadow: 1px 1px 0px 0px;
+    display: block;
+    padding: 20px;
+}
+header{
+    height: 70px;
+    width:100%;
+    display: table;
+    background-color: #CCCCCC;
+    vertical-align: middle;
+
+}
+.top h1{
+    display: table-cell;
+    vertical-align: middle;
+}
+nav{
+float: right;
+margin: 0px;
+padding: 0px;
+}
+.nav_li{
+line-height: 70px;
+float: left;
+margin-right: 20px;
+display: inline-block;
+}
+.aside{
+    width: 350px;
+    float:right;
+    margin-left: 20px;
+}
+.aside h2{
+    border-left:4px solid #aaa;
+    padding-left: 20px;
+}
+div{
+    margin: 10px 20px 0px 0px;
+    display: block;
+}
+.demand{
+    margin-left: 40%;
+}
+.input_message,.input_describe{
+    width: 35%;
+    text-align: right;
+    display: inline-block;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+.input_describe{
+    vertical-align: top;
+    margin-top: 0px;
+}
+button{
+    width: 100%;
+    background-color:#3355D0;
+    height: 40px;
+    border-radius:8px;
+}
+
+article{
+    margin-left: 40px;
+    margin-right: 450px;
+    line-height: 1.5;
+}
+figure{
+    height:120px;
+    width:140px;
+    display: inline-block;
+    border:1px solid #aaa;
+    text-align:center;
+    margin: 10px;
+}
+figure img{
+    width: 70%;
+}
+.table{
+    width: 100%;
+    margin: 0 auto;
+    border-color: #ccc;
+    border-collapse: collapse;
+}
+thead {
+color: white;
+background: #333;
+}
+tfoot{
+    background-color: #ccc;
+    vertical-align: middle;
+}
