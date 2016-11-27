@@ -1,0 +1,120 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    font-family: 微软雅黑;
+    background-color: #999999;
+}
+
+header{
+    position: relative;
+    background-color: #222222;
+    height: 60px;
+
+}
+header h1{
+    color: azure;
+    font-size:50px;
+}
+header ul{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+header ul li{
+    text-align: center;
+    width:60px;
+    display:block;
+    float:left;
+    padding:20px 10px;
+}
+header ul li a{
+     color: white;
+    font-size: 12px;
+    text-decoration: none;
+}
+header ul li:hover{
+    border-bottom: 3px solid brown;
+}
+
+article ,aside{
+    display: block;
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: #222222;
+    box-shadow: 1px 2px 1px 2px grey;
+}
+
+article h3{
+    font-size: inherit;
+    color: #555555;
+
+}
+article span{
+    color: #999999;
+    font-size: 14px;
+}
+article ul li{
+    list-style: none;
+}
+#picture ul li {
+    border:1px solid black;
+    width: 150px;
+    margin: 15px;
+}
+#picture ul li img{
+    width: 110px;
+    padding: 15px;
+}
+#picture ul li p{
+    text-align: center;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+table tr,table td{
+    border: 1px solid #999999;
+}
+#table_head{
+    background-color: darkslategray;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+#table_lest{
+    background-color: silver;
+    font-weight: bold;
+}
+
+aside form div{
+    font-size: 14px;
+    margin: 15px 0;
+}
+aside form div .tips{
+    float: left;
+    text-align: right;
+    width: 35%;
+    padding-right: 15px;
+}
+aside form div p{
+    margin-left: 35%;
+    padding-left: 15px;
+    color: #999999;
+    font-size: smaller;
+}
+aside form div textarea{
+    height: 100px;
+    width: 200px;
+}
+aside form button{
+    width: 100%;
+    background-color: darkslategray;
+    color: white;
+    height: 40px;
+    font-size: large;
+    box-shadow: #555555;
+    border-radius: 10px;
+}
