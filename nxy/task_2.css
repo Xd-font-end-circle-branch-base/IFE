@@ -1,0 +1,148 @@
+body{
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+#daohang{ 
+	background-color: #B3C3D2;
+	height: 110px;
+    
+}
+a:link{
+	text-decoration: none;
+	color: green;
+}
+a:visited{
+	text-decoration: none;
+	color: blue;
+}
+a:hover{
+	text-decoration: none;
+	color: #0D5353;
+}
+a:active{
+	text-decoration: none;
+	color: gray;
+}
+.wenzhang,.tupian,.gundong,.biaoge,.biaodan{
+	background-color: white;
+	margin: 20px;
+	padding: 20px;
+}
+.wenzhang{
+	box-shadow: 3px 3px 3px #333;
+}
+h2{
+	text-align: left;
+	font-size: 28px;
+	font-weight: 600;
+}
+h3{
+	text-align: left;
+	line-height: 40px;
+	font-size: 20px;
+	font-weight: 600;
+}
+.wenzhang p{
+	text-align: left;
+	line-height: 30px;
+	color: #CC6666;
+	font-size: 16px;
+	font-weight: normal;
+	text-indent: 30px;
+}
+.wenzhang ol{
+	margin-left: 50px;
+}
+.wenzhang ol li{
+	text-align: left;
+	line-height: 30px;
+	font-size: 15px;
+	font-weight: 600;
+	text-indent: 10px;
+}
+.wenzhang blockquote{
+	padding: 5px 10px;
+	margin: 0 auto;
+	color: gray;
+}
+.wenzhang q{
+	color: purple;
+}
+.wenzhang em{
+	color: green;
+	font-weight: 800;
+}
+.wenzhang strong{
+	color: red;
+}
+.picture{
+	border: solid 1px #666666;
+	margin: 20px;
+	width: 220px;
+
+}
+.picture p{
+	text-align: center;
+}
+.picture img{
+	width: 180px;
+	height: 150px;
+	margin: 20px;
+}
+.gundong{
+	width: 600px;
+	box-shadow:1px 1px 5px #333; 
+}
+.biaoge table{
+	border: solid 1px black;
+	width: 70%;
+	border-spacing: 0;	
+	box-shadow:1px 1px 5px #333;
+}
+.biaoge table table{
+	width: 80%;
+	margin: 0 auto;
+}
+.biaoge th{
+	background-color: purple;
+	border: solid 1px green;
+	color: gray;
+
+}
+.biaoge td{
+	border: solid 1px green;
+}
+.biaodan table{
+	border: none;
+	padding: 0;
+	border-spacing: 0;
+	box-shadow: 1px 1px 5px #b6b6b6;
+}
+.biaodan th{
+	text-align: right;
+	vertical-align: top;
+	padding-right: 10px;
+	padding-top: 2px;
+	text-shadow: 1px 1px 1px #9e3f3f;
+}
+.biaodan td{
+	vertical-align: top;
+	padding-bottom: 15px;
+}
+.lianjie{
+	width: 150px;
+	box-shadow: 1px 1px 5px #b6b6b6;
+}
+#footer{
+	background-color: blue;
+	height: 30px;
+	padding: 10px;
+}
+#footer p{
+	color: white;
+	text-align: center;
+	line-height: 30px;
+	margin: 0 auto;
+}
+
