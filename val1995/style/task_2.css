@@ -1,0 +1,150 @@
+* {
+    margin:0;
+    padding:0;
+}
+body {
+    background-color: #dddddd;
+}
+header {
+    position: relative;
+    background-color: #404040;
+    height: 60px;
+}
+header h1 img {
+    height: 58px;
+    padding-left: 20px;
+}
+header ul {
+    position: absolute;
+    top:0;
+    right:10px;
+}
+header ul li {
+    width: 80px;
+    text-align: left;
+    float: left;
+    padding:20px 10px;
+}
+header ul li a {
+    color: white;
+    font-size: 12px;
+    text-decoration: none;
+}
+article, section, aside {
+    display: block;
+    margin: 30px;
+    padding: 20px;
+    background: white;
+    box-shadow: 1px 1px 2px 1px #808080;
+}
+article h2, section h2 {
+    padding:5px 0;
+}
+article h3 {
+    padding:10px 0;
+    color: #808080;
+}
+article ul {
+    list-style: none;
+}
+article ul, article ol {
+    position: relative;
+    left: 20px;
+    padding: 20px;
+}
+article a {
+    color: blue;
+}
+article a:hover {
+    color: red;
+}
+article img {
+    width: 300px;
+}
+.author, .time {
+    line-height:30px;
+    color: #999999;
+    font-size: 12px;
+}
+section figure {
+    width: 120px;
+    height: 140px;
+    border: solid 2px #999999;
+    margin: 20px;
+}
+section figcaption {
+    text-align: center;
+    line-height: 20px;
+}
+section figure img {
+    position: relative;
+    left: 10px;
+    height: 100px;
+    border: solid 1px #404040;
+}
+table {
+    text-align: left;
+    width: 100%;
+    font-size: 12px;
+}
+table, th, td {
+    border: solid 1px #dddddd;
+    border-collapse: collapse;
+}
+table th {
+    background-color: #404040;
+    color: #FFFFFF;
+}
+table tr {
+    height: 20px;
+}
+tr.total {
+    background-color: #EEEEEE;
+}
+tr.total td {
+    font-weight: bold;
+}
+aside h2{
+    line-height:35px;
+    border-left: solid 5px #808080;
+    padding-left: 10px;
+    margin: 15px 0;
+}
+aside form div {
+    font-size: 14px;
+    margin: 15px 0;
+}
+aside form div .tips {
+    float: left;
+    text-align: right;
+    width: 35%; /*屏幕的35%那么宽的区域，右对齐。*/
+
+}
+aside form div p {
+    margin-left: 35%;
+    font-size: 12px;
+    color: #aaaaaa;
+}
+aside textarea {
+    width: 50%;
+    height: 100px;
+}
+aside .sbtBtn {
+    width: 100%;
+    height: 50px;
+    background-color: dodgerblue;
+    color: white;
+    font-size: 20px;
+    border-radius: 10px;
+}
+aside .sbtBtn:hover {
+    background-color: #2B6AFF;
+}
+footer {
+    position: relative;
+    background-color: #111111;
+    height: 60px;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
