@@ -1,0 +1,65 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+
+.card {
+  margin: 20px;
+  width: auto;
+  padding: 20px;
+  background-color: #eee;
+  overflow: auto;
+  border: 1px solid #999;
+  position: relative;
+}
+
+.left {
+  float: left;
+  width: 80px;
+  height: 80px;
+  padding: 20px 100px 20px 20px;
+  background-color: white;
+  border: 1px solid #999;
+  position: relative;
+
+}
+
+.left #name {
+  font-size: 13px;
+  position: absolute;
+  top: 20px;
+  left: 120px;
+  right: 10px;
+}
+
+.left img {
+  width: 80px;
+  height: 80px;
+  border: 1px solid #999;
+}
+
+.center {
+  position: absolute;
+  left: 240px;
+  right: 160px;
+  background-color: white;
+  border: 1px solid #999;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.right {
+  float: right;
+  height: auto;
+  padding: 20px 20px 0px 20px;
+  background-color: white;
+  border: 1px solid #999;
+}
+
+.right img {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 20px;
+  border: 1px solid #999;
+}
