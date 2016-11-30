@@ -1,5 +1,7 @@
 ## 西电前端圈-基础篇
 
+### 说明
+
 ---
 - 代码规范参照：[腾讯alloyteam团队](http://alloyteam.github.io/CodeGuide/)
 
@@ -15,12 +17,18 @@
 
 ### 教程
 
-[自留地-垂直水平居中](https://xdlrt.github.io/2016/03/20/2016-03-20/)
-[自留地-box-shadow的研究](https://xdlrt.github.io/2016/03/06/2016-03-06/)
+- [自留地-垂直水平居中](https://xdlrt.github.io/2016/03/20/2016-03-20/)
+
+- [自留地-box-shadow的研究](https://xdlrt.github.io/2016/03/06/2016-03-06/)
+
+- [CSS居中总结|Damonare的个人博客](http://damonare.github.io/2016/09/06/CSS%E5%B1%85%E4%B8%AD%E5%B0%8F%E8%B0%88/#more)
+
+### 任务划分
 
 阶段划分 | 学习内容 | 截止时间
 --- | --- | ---
 Git学习阶段|学习git命令，并成功推送一条commit到github|11.21晚八点
-百度前端学院任务一|掌握常用HTML标签的含义、用法|11.24晚八点
-百度前端学院任务二|实践并掌握CSS的颜色、字体、背景、边框、盒模型、简单布局等样式的定义方式|11.27晚八点
-百度前端学院任务三|掌握三栏式布局|11.30晚八点
+[百度前端学院任务一](http://ife.baidu.com/task/detail?taskId=1) | 掌握常用HTML标签的含义、用法|11.24晚八点
+[百度前端学院任务二](http://ife.baidu.com/task/detail?taskId=2) | 实践并掌握CSS的颜色、字体、背景、边框、盒模型、简单布局等样式的定义方式|11.27晚八点
+[百度前端学院任务三](http://ife.baidu.com/task/detail?taskId=3) | 掌握三栏式布局|11.30晚八点
+[百度前端学院任务四](http://ife.baidu.com/task/detail?taskId=4) | 使用尽可能多的方法实现效果图的居中效果 | 12.3晚八点
