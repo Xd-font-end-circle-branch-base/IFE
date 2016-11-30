@@ -1,0 +1,50 @@
+body {
+    padding: 20px;
+    font-family: "Times New Roman";
+    font-size: 15px;
+}
+.container {
+    padding: 20px;
+    background: #eee;
+    border: 1px solid #999;
+    overflow: auto;
+    min-width: 600px;
+}
+.logo {
+    width: 80px;
+    height: 80px;
+}
+.left {
+    float: left;
+    padding: 20px;
+    width: 200px;
+    background: #fff;
+    border: 1px solid #999;
+}
+.team_logo {
+    float: left;
+    border: 1px solid #999;
+}
+.team_name{
+    font-weight: bold;
+    text-align: center;
+}
+.right {
+    width: 120px;
+    float: right;
+    background: #fff;
+    border: 1px solid #999;
+}
+.member_logo {
+    background: #fff;
+    display: block;
+    margin: 20px;
+    border: 1px solid #999;
+}
+.middle {
+    padding: 20px;
+    margin-left: 260px;
+    margin-right: 140px;
+    background: #fff;
+    border: 1px solid #999;
+}
