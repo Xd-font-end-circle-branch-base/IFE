@@ -150,8 +150,8 @@
         <h2>这里是一个侧栏，这是侧栏的标题</h2>
         <div class="login-form">
           <h3>侧栏注册窗口的标题</h3>
-
-          <form action="index.html" method="post">
+          <!--action 属性规定当提交表单时，向何处发送表单数据。-->
+          <form action="" method="post">
             请数入邮箱的地址：
             <input type="text" name="email" placeholder="这是一个文本输入框"/>
             <br />
@@ -175,9 +175,8 @@
             <input type="checkbox" name="art" />艺术
             <input type="checkbox" name="science" />科学
 
-            <textarea name="desc" rows="2" cols="10">
-              这是多行输入框，输入你的个人描述
-            </textarea>
+            <!--textarea内容不需要换行，会导致前面有空白字符。-->
+            <textarea name="desc" rows="2" cols="10">这是多行输入框，输入你的个人描述</textarea>
             <input type="submit" name="submit" value="确认提交">
           </form>
         </div>
