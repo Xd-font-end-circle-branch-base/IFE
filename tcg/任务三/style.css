@@ -1,0 +1,44 @@
+*{
+	padding: 0;
+	margin:0;
+	font-family: 微软雅黑;
+}
+div{
+	padding: 20px;
+	background: #eee;
+	border: 1px solid #999;
+}
+#main{
+	margin:20px;
+	min-width: 420px;
+}
+#left{
+	width: 160px;
+	background: white;
+	float:left;
+}
+#mid{
+	background: white;
+	margin:0 140px 0 220px; 
+	
+}
+#right{
+	padding: 0;
+	background:white;
+	width: 120px;
+	float: right;
+}
+.img{
+	width: 80px;
+	height: 80px;
+}
+.name{
+	position: relative;
+	bottom:70px;
+
+}
+.styli{
+	padding-bottom: 20px;
+	text-align: center;
+	list-style: none;
+}
