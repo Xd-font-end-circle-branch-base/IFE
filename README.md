@@ -25,10 +25,16 @@
 
 ### 任务划分
 
+> 标有*着重看下
+
 阶段划分 | 学习内容 | 截止时间
 --- | --- | ---
 Git学习阶段|学习git命令，并成功推送一条commit到github|11.21晚八点
 [百度前端学院任务一](http://ife.baidu.com/task/detail?taskId=1) | 掌握常用HTML标签的含义、用法|11.24晚八点
 [百度前端学院任务二](http://ife.baidu.com/task/detail?taskId=2) | 实践并掌握CSS的颜色、字体、背景、边框、盒模型、简单布局等样式的定义方式|11.27晚八点
-[百度前端学院任务三](http://ife.baidu.com/task/detail?taskId=3) | 掌握三栏式布局|11.30晚八点
-[百度前端学院任务四](http://ife.baidu.com/task/detail?taskId=4) | 使用尽可能多的方法实现效果图的居中效果 | 12.3晚八点
+[*百度前端学院任务三*](http://ife.baidu.com/task/detail?taskId=3) | 掌握三栏式布局|11.30晚八点
+[*百度前端学院任务四*](http://ife.baidu.com/task/detail?taskId=4) | 使用尽可能多的方法实现效果图的居中效果 | 12.3晚八点
+[百度前端学院任务五](http://ife.baidu.com/task/detail?taskId=5) | 实践并掌握CSS的颜色、字体、背景、边框、盒模型、简单布局等样式的定义方式 | 12.6晚八点
+[*百度前端学院任务六*](http://ife.baidu.com/task/detail?taskId=6) | 实现一遍后尝试用less, sass或者stylus等再实现一次 | 12.9晚八点
+[百度前端学院任务七](http://ife.baidu.com/task/detail?taskId=7) | 在Chrome中完美实现与设计稿的各项字体、布局、内外边距等样式 | 12.12晚八点
+[*百度前端学院任务八*](http://ife.baidu.com/task/detail?taskId=7) | 删格化布局 | 12.12晚八点
