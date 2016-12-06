@@ -2,12 +2,15 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>task_2</title>
+    <title>task_5</title>
     <style type="text/css">
     body{
-    	background-color: gray;
+    	margin:0;
+    	padding:0;
+    	background-color: #dedede;
     	font-size: 14px;
     }
+
     #head li {
        display : inline;
     }
@@ -16,28 +19,30 @@
         height:60px;
     	margin:0px;
     	padding:0px;
-    	background-color: black;
+    	background-color:#333333;
     }
     #head ul{
     	margin: 0;
     	padding: 0;
     	position: relative;
     	float: right;
+    	list-style:disc;
     }
     #head li a{
        text-decoration: none;
        color: white;
        margin-right: 15px;
        line-height:60px;
-       font-size:10px;
+       font-size:12px;
        font-weight: bold;
     }
     #contentP1,#contentP2,#contentImg,#contentP3,#side{
        background-color: white;
-       width: 96%;
        padding:15px;
        font-family: 'Microsoft YaHei',Helvetica,Arial;
-       margin: 20px auto;
+       margin:0px 10px 20px 10px;
+       box-shadow: 2px 2px 2px #848484;
+       overflow:auto;
     }
     div h1{
        font-weight: bold;
@@ -48,20 +53,45 @@
        color:gray;
        margin:16px,0px;
     }
-    blockquote,{
+    blockquote{
        text-indent: 2em;
        font-size:14px;
+       margin:0;
+       padding:0;
 
     }
-    div p{
-       color:gray;
-       font-size:10px;
+    img{
+    	padding: 10px;
     }
-    #contentImg img{
+    div p,#side blockquote{
+       color:gray;
+       font-size:12px;
+       text-indent: 0px;
+       line-height: 1.6;
+    }
+    #contentP2 ul{
+       list-style: none;
+    }
+    #contentP3 ul{
+       list-style:decimal;
+    }
+    #contentImg figure{
        border:1px solid gray;
        margin:10px;
        padding:10px;
-       width:220px;
+       width:100px;
+       height: 100px;
+       text-align: center;
+       line-height:1.5;
+       float:left;
+    }
+    #contentImg figcaption{
+       margin-top: -5px;
+       margin-bottom:5px;
+    }
+    #contentImg figure img{
+       height:80px;
+       padding: 0px;
     }
     #myTable table{
        border:1;
@@ -74,14 +104,15 @@
     .lastTr{
        background-color: gray;
     }
+
     .asideLeft p{
        height: 21px;
     }
     .asideLeft{
 	   position: relative;
 	   float: left;
-	   margin-left: 15%;
-	   width: 20%;
+	   margin-left:0;
+	   width: 35%;
 	   text-align: right;
 	   margin-top: 0px;
     }
@@ -102,14 +133,35 @@
     footer{
 	background-color: black;
 	text-align: center;
-	height: 50px;
+	height: 75px;
 	color: white;
 	line-height: 60px;
 	padding:0;
 	margin:0;
     }
-    </style>
+    #content{
+       margin-left:20px;
+       margin-right:425px;
+       position:relative;
+       margin-top:20px;
+       overflow:auto;
+       line-height: 1.5;
 
+    }
+    #side{
+        background: #fff;
+        float: right;
+        width: 350px;
+        margin-top: 20px;
+        margin-right: 20px;
+        padding:20px;
+        box-shadow: 2px 2px 2px #848484;
+    }
+    #side p{
+    	color: black;
+    	font-size: 14px;
+    }
+    </style>
 </head>
 <body>
 <div id="head">
@@ -120,13 +172,54 @@
  <li><a href="task1.html">导航链接四</a></li>
  </ul>
  </div>
+ <aside id="side">
+   <h3>这里以后是一个侧栏，这是侧栏的标题</h3>
+   <form >
+   <div class="asideLeft">
+   <p>请输入邮箱地址：</p>
+   <p></p>
+   <p>请输入密码：</p>
+   <p>请重复输入密码：</p>
+   <p></p>
+   <p>性别：</p>
+   <p>爱好：</p>
+   <p>城市：</p>
+   <p>个人描述：</p>
+   </div>
+   <div class="asideRight">
+   <p><input type="text" name="user_email" id="user_email" placeholder="这是一个文本输入框"></p>
+   <blockquote>邮箱地址请按要求格式输入</blockquote>
+   <p><input type="text" name="password" placeholder="这是一个文本输入框"></p>
+   <p><input type="text" name="passwordreset" placeholder="这是一个文本输入框"></p>
+   <blockquote>密码请为6-16位英文数字</blockquote>
+   <p><input type="radio" name="sex" value="male" checked>男<input type="radio" name="sex" value="female">女</p>
+   <p><input type="checkbox" name="hobby" value="sport" id="sport"><label for="sport">运动</label>
+   <input type="checkbox" name="hobby" value="art" id="art"><lable for="art">艺术</lable>
+   <input type="checkbox" name="hobby" value="science" id="science"><label for="science">科学</label>
+   </p>
+   <p>
+   <select>
+   <option value="beijing">北京</option>
+   <option value="shanghai">上海</option>
+   <option value="shenzhen">深圳</option>
+   <option value="xian">西安</option>
+   </select>
+   </p>
+   <textarea name="selfIntro" >这是一个多行输入框，输入您的个人描述</textarea>
+   </div>
+   <p >
+   <input type="submit" value="确认提交" class="submit">
+   </p>
+   </form>
+   </aside>
+<div id="content">
 <div id="contentP1">
  <h1>文章一级标题</h1>
  <h2>文章二级标题</h2>
  <p>文章作者 文章发表时间</p>
- <blockquote>这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,<br/>换行了<br/>这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,换行了<br/>这是一个很长很长的段落,这是一个很长很长的段落,<a href="http://ife.baidu.com">这里有一个链接链接到http://ife.baidu.com</a>这是一个很长很长的段落,这是一个很长很长的段落,<b>这里有个粗体字</b>这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落。
+ <blockquote>这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,<br/>换行了<br/>这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,换行了<br/>这是一个很长很长的段落,这是一个很长很长的段落,<a href="http://ife.baidu.com">这里有一个链接链接到http://ife.baidu.com</a>这是一个很长很长的段落,这是一个很长很长的段落,<b>这里有个粗体字</b>这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落。</blockquote>
  <img src="W7MFOLI_H3EC[YD)_0FH9VC.png"><br/>
- 这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,换行了<br/>
+ <blockquote>这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,换行了<br/>
  这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,<b>这里有个粗体字</b>这是一个很长很长的段落,这是一个很长很长的段落,<a href="http://ife.baidu.com" target="_blank">这里有一个链接点击后打开新窗口链接到http://ife.baidu.com</a>这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落。</blockquote>
  </div>
  <div id="contentP2">
@@ -220,48 +313,7 @@
    </table>
    </div>
  </div>
- <aside id="side">
-   <h1>这里以后是一个侧栏，这是侧栏的标题</h1>
-   <h2>侧栏注册窗口标题</h2>
-   <form >
-   <div class="asideLeft">
-   <p>请输入邮箱地址：</p>
-   <p></p>
-   <p>请输入密码：</p>
-   <p>请重复输入密码：</p>
-   <p></p>
-   <p>性别：</p>
-   <p>爱好：</p>
-   <p>城市：</p>
-   <p>个人描述：</p>
-   </div>
-   <div class="asideRight">
-   <p><input type="text" name="user_email" id="user_email" placeholder="这是一个文本输入框"></p>
-   <p>邮箱地址请按要求格式输入</p>
-   <p><input type="text" name="password" placeholder="这是一个文本输入框"></p>
-   <p><input type="text" name="passwordreset" placeholder="这是一个文本输入框"></p>
-   <p>密码请为6-16位英文数字</p>
-   <p><input type="radio" name="sex" value="male" checked>男<input type="radio" name="sex" value="female">女</p>
-   <p>
-   <input type="checkbox" name="hobby" value="sport" id="sport"><label for="sport">运动</label>
-   <input type="checkbox" name="hobby" value="art" id="art"><lable for="art">艺术</lable>
-   <input type="checkbox" name="hobby" value="science" id="science"><label for="science">科学</label>
-   </p>
-   <p>
-   <select>
-   <option value="beijing">北京</option>
-   <option value="shanghai">上海</option>
-   <option value="shenzhen">深圳</option>
-   <option value="xian">西安</option>
-   </select>
-   </p>
-   <textarea name="selfIntro" >这是一个多行输入框，输入您的个人描述</textarea>
-   </div>
-   <p >
-   <input type="submit" value="确认提交" class="submit">
-   </p>
-   </form>
-   </aside>
+ </div>
    <footer>
     <span>版权所有&#169</span>
    </footer>
