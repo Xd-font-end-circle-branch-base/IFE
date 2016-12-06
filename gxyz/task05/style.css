@@ -1,0 +1,247 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+nav {
+  background-color: #333333;
+  width: 100%;
+  height: 60px;
+}
+
+nav img {
+  margin-left: 50px;
+  margin-top: 10px;
+  float: left;
+}
+
+nav ul {
+  float: right;
+  list-style: none;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+}
+
+/*顶部导航居中可以将 line-height 设置为与导航栏高度相同 */
+nav ul li {
+  margin-right: 30px;
+  float: left;
+  font-size: 12px;
+  line-height: 60px;
+  font-weight: bold;
+}
+
+#body {
+  /*width: 100%;*/
+  overflow: auto;
+  zoom: 1;
+  background-color: #DEDEDE;
+  padding: 20px 20px 20px 20px;
+}
+
+.post {
+  width: auto;
+  padding: 50px 20px 20px 20px;
+  background-color: white;
+  margin-bottom: 30px;
+  box-shadow: 2px 2px 2px #AAAAAA;
+}
+
+.post-info h2 {
+  margin-bottom: 15px;
+}
+.post-info h3 {
+  color: #949293;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.post-info p {
+  color: #949293;
+  font-size: 12px;
+  margin-bottom: 15px;
+}
+
+.post-content p {
+  text-indent: 2em;
+  margin-bottom: 20px
+}
+
+.post-content img {
+  margin-bottom: 10px;
+}
+
+.post-content ul {
+  list-style: none;
+  margin-left: 20px;
+}
+
+
+.post .image {
+  text-align: center;
+  width: 100px;
+  height: auto;
+  margin-left: 100px;
+  margin-bottom: 10px;
+  border: 1px solid #bbbbbb;
+  padding: 10px;
+}
+
+.post .image figcaption {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.post .image img {
+  width: 100px;
+}
+
+.post-content ol li {
+  font-weight: bold;
+  margin-left: 20px;
+}
+
+.post-content table {
+  padding: 5px;
+  width: 100%;
+  border-collapse:collapse;
+  border: 1px solid #CCCCCC;
+}
+
+
+.post-content table th {
+  padding: 5px;
+  text-align: left;
+  background-color: #333333;
+  color: white;
+}
+
+.post-content table #all-in-one {
+  background-color: #CCCCCC;
+}
+
+/*.sidebar {
+  padding: 50px 20px 20px 20px;
+  background-color: white;
+  margin-bottom: 30px;
+}
+
+.sidebar h2 {
+  font-size: 18px;
+  margin-bottom: 50px;
+}
+
+.login-form {
+  margin-left: 200px;
+}
+
+.login-form form{
+  width: 500px;
+
+}
+
+.login-form .notice {
+  color: #bbbbbb;
+  font-size: 14px;
+  margin-left: 200px;
+}
+
+.login-form label {
+   float: left;
+   width: 200px;
+   text-align: right;
+}
+
+.login-form div {
+  margin: 10px 0px;
+}
+
+.sidebar .submit {
+  width: 100%;
+  height: 40px;
+  font-size: 18px;
+  border-radius: 5px;
+  text-decoration: none;
+  background-color: #3355D0;
+  border: 1px solid #3355D0;
+  color: white;
+}*/
+
+aside {
+  background-color: white;
+  padding: 30px;
+  box-shadow: 2px 2px 2px #AAAAAA;
+}
+
+aside h2{
+    line-height:35px;
+    border-left: solid 5px #808080;
+    padding-left: 10px;
+    margin: 15px 0;
+    font-size: 20px;
+}
+aside form div {
+    font-size: 14px;
+    margin: 15px 0;
+}
+aside form div .tips {
+    float: left;
+    text-align: right;
+    width: 35%; 
+
+}
+aside form div p {
+    margin-left: 35%;
+    font-size: 12px;
+    color: #aaaaaa;
+}
+aside textarea {
+    width: 50%;
+    height: 100px;
+}
+aside .sbtBtn {
+    width: 100%;
+    height: 50px;
+    background-color: dodgerblue;
+    color: white;
+    font-size: 20px;
+    border-radius: 10px;
+}
+aside .sbtBtn:hover {
+    background-color: #2B6AFF;
+}
+
+footer {
+  clear: both;
+  width: 100%;
+  height: 80px;
+  background-color: black;
+  color: white;
+  text-decoration: center;
+}
+
+footer p {
+  padding-top: 20px;
+  width: 100px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.left {
+  /*float: left;
+  width: 62%;*/
+  margin-right: 440px;
+}
+
+aside {
+  /*margin-left: 20px;
+  float: right;
+  width: 400px;*/
+  position: absolute;
+  top: 80px;
+  right: 20px;
+  width: 350px;
+}
