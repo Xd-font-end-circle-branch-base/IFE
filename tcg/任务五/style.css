@@ -1,0 +1,164 @@
+*{
+	padding: 0;
+	margin: 0;
+	font-family: 微软雅黑;
+}
+h2{
+	font-family:Microsoft Yahei Light;
+	font-size:20px;
+}
+ul li{
+	list-style: none;
+}
+p{
+	text-indent: 2em;
+}
+ol{
+	margin-left: 40px;
+}
+h5{
+	margin: -5px 0 5px 0;
+}
+thead{
+	background: black;
+	color: white;
+}
+td{
+	border-left: 1px solid #BFBEBE;
+	border-bottom: 1px solid #BFBEBE;
+	font-size: 10px;
+	padding: 2px;
+}
+tfoot{
+	background: #BFBEBE;
+}
+.container{
+	min-width: 1165px;
+}
+.nav{
+	width: 100%;
+	height: 65px;
+	background: #2C2A2A;
+	position: relative;
+}
+.logo{
+	width: 130px;
+	height: 100px;
+	margin:-20px 0px 0px 45px;
+}
+.nav ul{
+	float: right;
+	margin-top: 22px;
+}
+.nav ul li{
+	padding-right:10px; 
+	float: left;
+}
+.nav ul li a{
+	text-decoration: none;
+	color: white;
+}
+.main{
+	width: 100%;
+	background: #CCCBCB;
+}
+.sidebar{
+	float: right;
+	width: 335px;
+	background: white;
+	box-shadow: 0px 0px 5px #888888;
+	margin:20px 20px 0 0; 
+	padding: 20px;
+}
+.content{
+	margin: 0px 400px 0px 0px;
+	padding:20px; 
+	line-height: 20px;
+
+}
+.article{
+	padding: 20px;
+	margin-bottom:20px; 
+	background: white;
+	border: 1px solid #eee;
+	box-shadow: 0px 0px 5px #888888;
+}
+.sid_tle{
+	border-left: 4px solid #CCCBCB;
+	padding: 10px;
+}
+.form p{
+	position: relative;
+	left: -20px;
+	text-align:right;
+	line-height: 40px;
+	font-size: 14px;
+}
+.form input{
+	margin: 0 20px 0 20px;
+}
+.sex{
+	position: relative !important;
+	left: -108px !important;
+}
+.sex input{
+	margin: 0 5px 0 20px;
+}
+.hobit{
+	position: relative !important;
+	left: -9px !important;
+}
+.description{
+	position: relative !important;
+	left: -3px !important;
+}
+.description textarea{
+	margin-left: 18px;
+	margin-top: 12px;
+}
+.description label{
+	position: relative;
+	top: -70px;
+} 
+.hobit input{
+	margin: 0 5px 0 20px;
+}
+.submit{
+	width: 300px;
+	height: 50px;
+	background: #837EFF;
+	color: white;
+	border-radius: 10px;
+}
+.author{
+	font-size: 14px;
+	color: #AFAEAE;
+	position: relative;
+	top: -10px;
+}
+.article ul li ul li{
+	text-align: center;
+	float: left;
+	margin: 10px; 
+	padding: 10px;
+	outline: 1px solid #BABABA;
+}
+.photo{
+	width: 105px;
+	height: 85px;
+}
+.clearfix{
+	overflow: auto;
+	clear: both;
+}
+.tab{
+	width: 100%;
+}
+.footer{
+	width: 100%;
+	height: 80px;
+	background: black;
+	text-align: center;
+	line-height: 80px;
+	color: white;
+}
