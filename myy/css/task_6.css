@@ -1,0 +1,296 @@
+*{
+    padding:0;
+    margin:0;
+}
+body{
+    background-color:#5d5d5d;
+}
+#body{
+    width:980px;
+    height:1386px;
+    padding:0;
+    margin:20px auto;
+    background-color:#fff;
+}
+header{
+    border-bottom:2px solid #938e8c;
+    width:892px;
+    margin:0 44px 20px;
+    display:flex;
+    justify-content: space-between;
+    align-items:flex-end;
+}
+article{
+    float:left;
+    margin:20px 44px 10px;
+}
+header>div:first-child{
+    height:61px;
+    width:110px;
+    background-color:#d45d5c;
+    color:#fff;
+    font:12px "SimHei";
+    vertical-align:text-bottom;
+}
+header>div:last-child{
+    font:12px "SimHei";
+    color:#d45d5c;
+}
+/**以下是article1的样式*/
+#one-top-img{
+    position:relative;
+    float:left;
+    margin-right: 20px;
+}
+#one-top-img>img{
+    height:301px;
+    width:641px;
+}
+#one-top-img>div{
+    width:191px;
+    height:301px;
+    position:absolute;
+}
+#img-left{
+    background-color:green;
+    opacity:0.2;
+    left:0;
+    top:0;
+}
+#img-right{
+    background-color:red;
+    opacity:0.2;
+    right:0;
+    top:0;
+}
+#one-top-right{
+    width:220px;
+    position: relative;
+    float:left;
+}
+.p-24px{
+    font:24px "Microsoft YaHei";
+    color:#cc8091;
+    text-decoration:underline;
+}
+.p-24px>span{
+    font-size:30px;
+}
+.p-12px{
+    font:12px "KaiTi";
+    color:#676767;
+}
+.p-116px{
+    font:116px "Microsoft YaHei";
+    color:#75b86b;
+}
+#one-top-right>div{
+    position:relative;
+    float:left;
+}
+#one-top-right-br>p{
+    font:55px "Microsoft YaHei";
+    color:#cc8091;
+}
+#one-top-right-bl>p:first-child{
+    margin-top:16px;
+    font:21px "Microsoft YaHei";
+    color:#cc8091;
+}
+#one-top-right-bl>p:last-child{
+    font:12px "Microsoft YaHei";
+    color:#676767;
+}
+#one-bottom>div{
+    width:210px;
+    position:relative;
+    float:left;
+    margin:10px 20px 0 0;
+    font:12px "Microsoft YaHei";
+    color:#231815;
+    line-height:16px;
+    opacity:0.7;
+}
+#one-bottom>div>p:first-child{
+    font-size:16px;
+    font-weight: bold;
+    text-decoration:underline;
+    margin-bottom:10px;
+}
+#p-red{
+    color:#cc7680;
+}
+#p-orange{
+    color:#d2994f;
+}
+#p-green{
+    color:#418c56;
+}
+#p-red-bottom>p{
+    line-height:16px;
+}
+#p-red-bottom>p>span{
+    font:12px "Microsoft YaHei";
+    font-style: italic;
+    color:#cd4a48;
+    opacity:0.7;
+}
+
+/**以下是article2的样式*/
+
+#two-left{
+    width:415px;
+    position: relative;
+    float:left;
+}
+#two-left>div:first-child{
+    border-bottom:2px solid #11456b;
+    margin-bottom: 20px;
+}
+#two-left>div:first-child>p{
+    font:42px "SimHei";
+    color:#11456b;
+    font-weight: bolder;
+}
+#two-left>div:first-child>p>span{
+    font-size:72px;
+    color:#f5e327;
+}
+#two-left>div:last-child>p>span{
+    font:70px "Microsoft YaHei";
+    color:#f5e327;
+    display:inline-block;
+    float:left;
+    margin:-10px 0;
+}
+#two-left>div:last-child>p{
+    line-height:16px;
+    font:12px "SimSun";
+    color:#767777;
+}
+#two-left>div:last-child>img{
+    position:relative;
+    float:right;
+    margin:10px 0 35px 15px;
+}
+#two-right{
+    position:relative;
+    float:left;
+    margin-left:15px;
+}
+#two-img{
+    position:relative;
+    height:275px;
+    width:458px;
+}
+#two-img>img{
+    height:275px;
+    width:458px;
+}
+#two-img>div{
+    background: rgba(5,6,6,0.2);
+    position:absolute;
+    bottom:0;
+    height:61px;
+    width:458px;
+}
+#two-img>div>span:first-child{
+    font:26px "Microsoft YaHei";
+    color:#fff;
+    border-left:#72b16a 3px solid;
+    padding:10px;
+    display:inline-block;
+    margin:5px 0 0 40px;
+}
+#two-img>div>span:last-child{
+    font-style: italic;
+    font:12px "Microsoft YaHei";
+    color:#72b16a;
+    letter-spacing: 4px;
+}
+#two-right-bottom{
+    background-color:#eeeed6 ;
+    height:318px;
+    width:459px;
+    float:left;
+    margin:20px 0 0 0;
+}
+#two-right-bottom>ul{
+    margin:36px;
+}
+#two-right-bottom>ul>li{
+    margin:15px;
+    font:16px "SimSun";
+    color:#5a5b5b;
+}
+#trb-left{
+    background-color: #d55d5c;
+    height:160px;
+    width:280px;
+    position:relative;
+    float:left;
+}
+#trb-left>span{
+    color:#fff;
+    font:110px "Microsoft YaHei";
+    border-right:#fff solid 2px;
+    display:inline-block;
+    float:left;
+    margin:5px 0 15px 5px;
+}
+#trb-left>div{
+    width:170px;
+    margin:30px 5px 0 5px;
+    display:inline-block;
+    float:left;
+}
+#trb-left>div>p{
+    color:#fff;
+    line-height:24px;
+    font:21px "SimHei";
+    font-style: italic;
+}
+#trb-left>div>p:last-child{
+    font-size:12px;
+    font-style:normal;
+    line-height: 16px;
+}
+
+#trb-right{
+    position:relative;
+    float:left;
+    width:140px;
+    margin:20px 0 0 20px;
+}
+#trb-right>p{
+    font:14px "SimHei";
+    color:#5a5b5b;
+    font-style:italic;
+    line-height:16px;
+}
+#trb-right>p>span{
+    font: 72px "SimHei";
+    color: #d55d5c;
+}
+#trb-right>p>span:first-child{
+    display:inline-block;
+    float:left;
+    margin:-22px -10px -50px -30px;
+}
+#trb-right>p>span:last-child{
+    display:inline-block;
+    float:right;
+    margin:-10px ;
+}
+footer{
+    border-top:1px solid #938e8c;
+    width:892px;
+    position:relative;
+    float:left;
+    margin:0 44px;
+}
+footer>span{
+    position:absolute;
+    top:0;
+    right:0;
+}
