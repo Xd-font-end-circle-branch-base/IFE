@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>test6</title>
+	<style type="text/css">
+		* {margin:0;padding:0;}
+		body {font-size: 14px;font-family: "微软雅黑";background-color: gray;}
+		.box {width:892px;height:1386px;margin:0 auto;background-color: white;padding-left: 44px;padding-right: 44px;}
+
+		.header {border-bottom: 2px solid #938e8c;overflow: hidden;position: relative;margin-bottom: 30px;}
+		.header .logo {width:110px;height:61px;background-color: #D45C5B;float:left;}
+		.header .date {float:right;position:absolute;bottom:4px;right:0;}
+		.header .logo p {color:white;position: absolute;left:4px;bottom:4px;}
+		
+		.banner {margin-bottom: 30px;overflow: hidden;}
+		.banner .left {float:left;position: relative;}
+		.banner .left .img_left{width:191px;height:301px;background-color: #75b86b;opacity: 0.8;position: absolute;left:0;top:0;}
+		.banner .left .img_right{width:191px;height:301px;background-color:#d45d5c;opacity: 0.8;position: absolute;right:0;top:0;}
+		.banner .right {width:203px;height:299px;border-top: 2px solid #cc8091;float:right;}
+		.banner .right h2 {font-size: 18px;text-decoration: underline;line-height: 24px;}
+		.banner .right .about {padding-top: 6px;}
+		.banner .right .about_small {font-size: 12px;line-height: 16px;}
+		.banner .right .num {font-size: 116px;color:#75b86b;}
+		.banner .right .num32 {font-size: 55px;color:#cc8091;float: left;padding-right: 2px;}
+		.banner .right .css {font-size: 21px;color:#cc8091;float: left;padding-top: 17px;}
+		.banner .right .text {font-size: 12px;color:#cc8091;float: left;}
+		
+		.wwh {margin-bottom: 50px;overflow: hidden;}
+		.wwh div {width:230px;float:left;margin-right: 16px;}
+		.wwh h2 {font-size: 16px;color:#418c59;text-decoration: underline;margin-bottom: 10px;}
+		.wwh p {font-size: 12px;line-height: 16px;}
+		.wwh .how p {padding-bottom: 10px;}
+		.wwh .what_3 p {padding-bottom: 10px;font-size: 12px;}
+		.wwh .what_3 p span {color:#cc8091;}
+
+		.content {border-bottom: 1px solid #938e8c;overflow: hidden;padding-bottom: 20px;position: relative;}
+		.content .left {width:415px;float:left;}
+		.content .left p {width:415px;font-size: 12px;color:#767777;line-height: 16px;text-indent: 2em;}
+		.content .left .big {text-indent: 0;} 
+		.content .left .title {position: relative;border-bottom: 2px solid #11456b ;padding-bottom: 10px;margin-bottom: 20px;}
+		.content h2 {font-size: 62px;color:#f5e327;font-style: italic;}
+		.content h3 {font-size: 32px;color:#11456b;font-weight: 450;}
+		.content .left .num {position: absolute;left:160px;top:30px;}
+		.content .article1 span {float:left;font-size:50px;line-height: 70px;width:70px;text-align: center;color:#f5e327;}
+		.content .left img {float: right;padding:16px;}
+
+
+		.content .right {float: right;}
+		.content .right .list{width:458px;height: 318px;background-color: #eeeed6;margin-top: 20px;}
+		.content .right .pic {position: relative;}
+		.content .right .pic img {display: block;}
+		.content .right .fugai {position: absolute;height: 60px;width:458px;bottom:0;background-color: black;opacity: 0.8;}
+		.content .right .fugai p {color:white;position: absolute;left: 20px;top:10px;font-size: 30px;border-left: 3px solid #72b16a;padding-left: 20px;}
+		.content .right .fugai p span {font-size: 14px;color:#72b16a;padding-left: 10px;font-style: italic;}
+
+		.content .right ul {padding-left: 40px;list-style: none;}
+		.content .right ul li {padding-top:20px;}
+		.content .right ul li span {padding-right:6px;}
+		.content .right .bigbox {margin-top: 41px;}
+		.content .right .hello {margin-left:275px;margin-right: 15px;padding-top: 30px;font-size: 14px;}
+		.content .right .small_box {width: 220px;height: 100px;background-color: #d45d5c;float:left;padding: 30px 20px;}
+		.content .right .small_box .zero {font-size: 100px;float:left;margin-top: -16px;color:white; }
+		.content .right .small_box .en_num {font-size: 20px;float:left;color:white;border-left: 3px solid white;margin-left: 10px;padding-left: 10px;margin-top: 16px;}
+		.content .right .small_box .en_num .font_12 {font-size: 12px;}
+		.content .right .hello .yinhao1 {font-size: 72px;font-family: "黑体";float:left;height:30px;margin:-18px 0px 0px -40px;color:#d45d5c;}
+		.content .right .hello .yinhao2 {font-size: 72px;font-family: "黑体";float:right;height:30px;margin:0px -32px 0px 0px;color:#d45d5c;}
+
+		footer p {font-size: 12px;color:#d45d5c;float: right;}
+	</style>
+</head>
+<body>
+
+	<div class="box">
+
+		<!-- 头部 -->
+		<div class="header">
+			<div class="logo">
+				<p class="logo_text">if.baidu.com</p>
+			</div>
+			<p class="date">2016.03</p>
+		</div>
+
+		<!-- banner部分 -->
+		<div class="banner">
+			<div class="left">
+				<img src="imgs/banner.jpg">
+				<div class="img_left"></div>
+				<div class="img_right"></div>
+			</div>
+			<div class="right">
+				<h2 class="about">ABOUT</h2>
+				<h2>TECHNOLOGE</h2>
+				<p class="about_small">About technologe about technologe </p>
+				<p class="num">700</p>
+				<div>
+					<p class="num32">3.2</p>
+					<p class="css">css</p>
+					<p class="text">csscsscsscsscsscss</p>
+				</div>
+			</div>
+		</div>
+
+		<!-- WWH部分 -->
+		<section class="wwh">
+			<div class="what">
+				<h2 class="what_">What</h2>
+				<p class="text">前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端</p>
+			</div>
+			<div class="when">
+				<h2 class="when_">When</h2>
+				<p>前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端</p>
+			</div>
+			<div class="how">
+				<h2>How</h2>
+				<p>前端前端前端前端前端</p>
+				<p>前端前端前端前端前端</p>
+				<p>前端前端前端前端前端</p>
+			</div>
+			<div class="what_3">
+				<p>what------<span>40%</span></p>
+				<p>what------<span>30%</span></p>
+				<p>what------<span>30%</span></p>
+			</div>
+		</section>
+
+		<!-- 主要内容区 -->
+		<section class="content">
+			<div class="left">
+				<div class="title">
+					<h2>THE</h2>
+					<h3 class="num">TECHNOLOGE</h3>
+					<h3>OF&nbsp&nbspFRONT</h3>
+					<h3>前端技术领域</h3>
+				</div>
+				<div class="article1">
+					<p class="big">
+						<span>前</span>端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前
+						<img src="imgs/1.jpg">
+						端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端
+					</p>
+					
+					<p>
+						前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端
+					</p>
+					<p>
+						前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端
+					</p>
+				</div>
+			</div>
+			<div class="right">
+				<div class="pic">
+					<img src="imgs/2.jpg">
+					<div class="fugai">
+						<p>前端技术<span>前端技术前端技术</span></p>
+					</div>
+				</div>
+				
+				<div class="list">
+					<ul>
+						<li><span>▲</span>前端前端前端前端前端.....................................................前端</li>
+						<li><span>▲</span>前端前端前端前端前端.....................................................前端</li>
+						<li><span>▲</span>前端前端前端前端前端.....................................................前端</li>
+					</ul>
+					<div class="bigbox">
+						<div class="small_box">
+							<div class="zero">0</div>
+							<div class="en_num">
+								<p>ONE TWO</p>
+								<p>THREE FOUR</p>
+								<p class="font_12">hello world hello world </p>
+							</div>
+						</div>
+						<div class="hello">
+							<p><span class="yinhao1">“</span>hello world hello world hello world hello world hello world hello world hello world hello world hello world<span class="yinhao2">”</span></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- footer -->
+		<footer>
+			<p>ife.baidu.com</p>
+		</footer>
+	</div>
+</body>
+</html>
