@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>IFE_Task_4</title>
+    <link rel="stylesheet" href="css/task_4.css"/>
+</head>
+<body>
+<div id="parent">
+    <div id="children">
+        <canvas id="center"></canvas>
+    </div>
+</div>
+<script>
+    let center = document.getElementById("center");
+    if(center.getContext){
+        let canHeight = document.getElementById('children').clientHeight;
+        let canWidth = document.getElementById('children').clientWidth;
+        center.height = canHeight;
+        center.width = canWidth;
+        let con = center.getContext("2d");
+        con.beginPath();
+        con.fillStyle = "#fc0";
+        con.moveTo(0,0);
+        con.lineTo(50,0);
+        con.arc(0,0,50,0,-0.5*Math.PI,false);
+        con.moveTo(0,50);
+        con.lineTo(0,0);
+        con.fill();
+        con.moveTo(canWidth,canHeight);
+        con.lineTo(canWidth,canHeight-50);
+        con.arc(canWidth,canHeight,50,0.5*Math.PI,Math.PI,true);
+        con.lineTo(canWidth,canHeight);
+        con.fill();
+    }
+</script>
+</body>
+</html>
