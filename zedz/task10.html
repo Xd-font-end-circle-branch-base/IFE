@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        .box{
+            display:flex;
+            align-items:center;
+            justify-content:space-between;
+        }
+        .box div{
+            width:150px;
+            border:1px solid #f00;
+            margin:20px;
+        }
+        .box div:last-child{
+            border:1px solid #0f0;
+        }
+        .a{
+            height:120px;
+        }
+        .b{
+            height:100px;
+        }
+        .c{
+            height:40px;
+        }
+        .d{
+            height:200px;
+        }
+        @media screen and (max-width: 640px){
+            .box{
+                align-items:flex-start;
+                flex-wrap:wrap;
+            }
+            .d{
+                order:-1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="a"></div>
+        <div class="b"></div>
+        <div class="c"></div>
+        <div class="d"></div>
+    </div>
+</body>
+</html>

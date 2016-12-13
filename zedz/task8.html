@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        div[class^="col"]>div{
+            border:1px solid #999;
+            background-color:#eee;
+            height:50px;
+            margin:10px;
+        }
+        div[class^="col"]{
+            float:left;
+        }
+        @media screen and (min-width: 768px) {
+            .col-md-4{
+                width:33.333333333333333333333333%;
+            }
+            .col-md-3{
+                width:25%;
+            }
+            .col-md-6{
+                width:50%;
+            }
+            .col-md-1{
+                width:8.3333333333333333333333333%;
+            }
+            .col-md-2{
+                width:16.666666666666666666666666%;
+            }
+        }
+        @media screen and (max-width: 768px) {
+            .col-sm-6{
+                width:50%;
+            }
+            .col-sm-12{
+                width:100%;
+            }
+            .col-sm-3{
+                width:25%;
+            }
+            .col-sm-2{
+                width:16.66666666666666666666666%;
+            }
+            .col-sm-8{
+                width:66.66666666666666666666666%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="col-md-4 col-sm-6"><div></div></div>
+    <div class="col-md-4 col-sm-6"><div></div></div>
+    <div class="col-md-4 col-sm-12"><div></div></div>
+    <div class="col-md-3 col-sm-3"><div></div></div>
+    <div class="col-md-6 col-sm-6"><div></div></div>
+    <div class="col-md-3 col-sm-3"><div></div></div>
+    <div class="col-md-1 col-sm-2"><div></div></div>
+    <div class="col-md-1 col-sm-2"><div></div></div>
+    <div class="col-md-2 col-sm-8"><div></div></div>
+    <div class="col-md-2 col-sm-3"><div></div></div>
+    <div class="col-md-6 col-sm-3"><div></div></div>
+</body>
+</html>
