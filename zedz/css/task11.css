@@ -1,0 +1,34 @@
+.main{
+    position:relative;
+    overflow:hidden;
+    width:300px;
+    height:130px;
+}
+img{
+    float:left;
+}
+.img-box{
+    position:relative;
+    overflow:hidden;
+    width:900px;
+    transition:all 0.5s;
+}
+#img1:target~.img-box{
+    left:0;
+}
+#img2:target~.img-box{
+    left:-300px;
+}
+#img3:target~.img-box{
+    left:-600px;
+}
+.a-box{
+    position:absolute;
+    right:0;
+    bottom:0;
+}
+a{
+    float:right;
+    margin-left:5px;
+    background-color:rgba(255,255,255,0.5);
+}
