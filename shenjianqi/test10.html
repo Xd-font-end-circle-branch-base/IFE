@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>test10</title>
+	<style type="text/css">
+		* {margin:0;padding: 0;}
+		div {box-sizing:border-box;}
+		.box {border:1px solid gray;display:flex;justify-content:space-between;align-items: center;padding: 20px;}
+		.box >div {width:150px;border:1px solid red;margin-bottom: 20px;}
+		.box1 {height:120px;}
+		.box2 {height:100px;}
+		.box3 {height:40px;}
+		.box .box4 {height:200px;border:1px solid blue;}
+
+		@media all and (max-width: 640px) {
+			.box4 {order:-1;}
+			.box {align-items: flex-start;flex-wrap: wrap; }
+		}
+	</style>
+</head>
+<body>
+	<div class="box">
+		<div class="box1">1</div>
+		<div class="box2">2</div>
+		<div class="box3">3</div>
+		<div class="box4">4</div>
+	</div>
+</body>
+</html>
