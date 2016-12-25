@@ -1,0 +1,96 @@
+/*小任务一*/
+table {width:300px;}
+table thead tr {background-color: #000;color:#fff;text-align: left;
+font-weight: 700;
+}
+
+table tbody tr:nth-of-type(even) td {
+	background-color: #bbb;
+}
+
+table tbody tr:nth-of-type(-n+3) td {
+	color:red;
+}
+
+
+/*小任务二*/
+.wenben {width:100px;transition: width 2s}
+.wenben:focus {
+	width:200px;
+	border-color: skyblue;
+}
+
+
+/*小任务三*/
+
+.banner {
+	width:400px;
+	height:250px;
+	margin-left: 400px;
+	position: relative;
+	background:url(imgs/1.jpg);
+	overflow:hidden;
+}
+
+/*.sliders ul {list-style: none;}*/
+
+.sliders li {
+  position: absolute;
+  left: -100%;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  animation: .5s slider-out linear;
+}
+
+#slider-1 {
+  background:url(imgs/1.jpg);
+}
+
+#slider-2 {
+  background:url(imgs/2.jpg);
+}
+
+#slider-3 {
+  background:url(imgs/3.jpg);
+}
+
+.sliders li:target {
+  
+  animation: .5s slider-in linear;
+  left: 0%;/*停住*/
+}
+
+@keyframes slider-out {
+  0% {
+    left: 0%;
+  }
+  100% {
+    left: -100%;
+  }
+}
+
+@keyframes slider-in {
+  0% {
+    left: 100%;
+  }
+  100% {
+    left: 0%;
+  }
+}
+
+.btns {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: flex;
+}
+
+.btns a {
+  display: block;
+  margin: 0 1px;
+  background-color: rgba(0, 255, 255, 0.5);
+  color: white;
+  text-decoration: none;
+  padding: 10px 14px;
+}
