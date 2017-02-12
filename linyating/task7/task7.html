@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>task_7</title>
+    <style type="text/css">
+    body{
+        width:1280px;
+        background-color:white;
+        font-size:21px;
+        font-family:Helvetica,Arial,'Microsoft YaHei','KaiTi','SongTi';
+    }
+    body,header,h1,h2,h3,img,blockquote,ul,li,footer{
+    	margin: 0px;
+    	padding: 0px;
+    	font-weight: normal;
+    }
+    header{ 
+        height:60px;
+        font:21px Helvetica;
+    }
+    header .left{
+    	height: 60px;
+    	width:10%;
+    	display:block;
+    	float:left;
+    	margin-left: 50px;
+    }
+    header .left img{
+    	margin-bottom:-5px;
+    }
+    header .left h1{
+    	color: #4e3a4f;
+    	font-size:24px;
+    	font-weight:bold;
+    	display:inline-block;
+    	line-height: 60px;
+    	margin-left: 5px;
+    }
+    header ul{
+    	height: 60px;
+    	line-height: 60px;
+    	list-style: none;
+    	box-sizing: border-box;
+    }
+    header ul li{
+    	font:14px 'Microsoft YaHei';
+    	float:right;
+    	line-height: 60px;
+    	display: inline-block;
+    	text-align: center;
+    	box-sizing: border-box;
+    	width:89.5px;
+    	cursor: pointer;
+    	color: #534141;
+
+    	transition: color 0.4s ease-in-out;
+    	-webkit-transition:color 0.4s ease-in-out;
+    	-moz-transition:color 0.4s ease-in-out;
+
+    }
+    header ul .move{
+        position: absolute;
+        border-top: 4px solid #e53c3c;
+        left:48.8%;
+        top:55px; 
+        width:85px;
+
+        -webkit-transition: left 0.4s ease-in-out;
+        -moz-transition: left 0.4s ease-in-out;
+        transition: left 0.4s ease-in-out;
+    }
+    header ul li:first-child{
+    	margin-left:80px;
+    }
+    header ul li:hover{
+        color:#e74f4d;
+    }
+    header ul li img{
+        margin-bottom: -5px;
+    }
+    header ul li:nth-child(6):hover~.move{
+        left:48.8%;
+    }
+    header ul li:nth-child(5):hover~.move{
+    	left:55.3%;
+    }
+    header ul li:nth-child(4):hover~.move{
+    	left:61.8%;
+    }
+    header ul li:nth-child(3):hover~.move{
+    	left:68.3%;
+    }
+    header ul li:nth-child(2):hover~.move{
+    	left:74.8%;
+    }
+    header ul li:nth-child(1):hover~.move{
+    	left:87.5%;
+    }
+    #content1{
+        height:690px;
+        background:url(content1-bg.jpg) no-repeat 0 0;
+        padding-left:126px;
+        padding-top:210px;
+        padding-bottom:0px;
+    }
+    #content1 .content1_word{
+    	color: white;
+    	font-family: 'Microsoft YaHei';
+    	 	
+    }
+    .content1_word h1{
+    	font-size:60px;
+    	font-weight:normal;
+    }
+    .content1_word h2{
+        font-size:21px; 
+    	font-weight:normal;
+    	width:14em;
+    	margin-top:18px;
+    	margin-left: 5px;
+    }
+    .content1_word .button1{
+    	margin-top:60px;
+    	width: 331px;
+    	height: 65px;
+    	font-size:30px;
+    	font-family: 'Microsoft YaHei';
+    	text-align: center;
+    	line-height: 65px;
+    	background-color:#e53c3c;
+    	color: white;
+    	border:0px;
+    }
+    #content2{
+    	height:240px;
+    }
+    .content2_item{
+    	width:25%;
+    	float:left;
+    	margin-top: 0px
+    }
+    #content2 img{
+        width:42px;
+        height:42px;
+        margin:20px 140px 40px 140px;
+    }
+    #content2 p{
+    	text-align: center;
+    	width:11em;
+    	padding:0 85px;
+    	font:14px 'HeiTi';
+    	border:solid 1px white;
+    	border-left-color:rgb(119,119,119);
+    	color:rgb(119,119,119);
+    }
+    #content3{
+    	height: 350px;
+    	background-color: rgb(237,236,236);
+    	text-align: center;
+    }
+    #content3 img{
+    	margin-top: 80px;
+    	width:91px;
+    	height:92px;
+    }
+    #content3 p{
+    	text-align:center;
+    	font:53.6px 'Microsoft YaHei';
+    	font-weight:thin;
+    	color:rgb(144,144,144);
+    }
+    #content4{
+    	height:340px;
+    	background:url(pic02.jpg) no-repeat;
+    }
+    #content4 .under{
+    	height:340px;
+    	background-color:rgb(170,52,50);
+    	opacity:0.2;
+    	position:absolute;
+    }
+    #content4 .topic{
+    	height:170px;
+    	width:100%;
+    	text-align:center;
+    	display:block;
+    	position:absolute;
+    }
+    #content4 .topic h1{
+    	font:21px 'Microsoft YaHei';
+    	color: white;
+    	margin-top: 50px;
+    }
+    #content4 .topic h1 span{
+        border-bottom:solid 2px;
+        border-bottom-color:white;
+        display:inline-block;
+        padding-bottom:6px;
+    }
+    #content4 .topic h2{
+    	font:12px 'Microsoft YaHei';
+    	color: white;
+    	margin-top:20px;
+    }  
+    #content4 input[type="radio"]{
+    	margin-left: 20px;
+    	margin-top: 200px;
+    	width:235px;
+    	height:36px;
+    	cursor: pointer;
+    	position:relative;
+    	z-index:10; 
+    	opacity:0;  	
+    }
+    #content4 input[type="radio"]:first-of-type{
+    	margin-left:150px;
+    }
+    #content4 input[type="radio"]:nth-of-type(1):checked~.options .s1 option,
+    #content4 input[type="radio"]:nth-of-type(2):checked~.options .s2 option,
+    #content4 input[type="radio"]:nth-of-type(3):checked~.options .s3 option{
+        display:block;
+    }
+    #content4 input[type="radio"]:nth-of-type(1):checked~.options .s1 span,
+    #content4 input[type="radio"]:nth-of-type(2):checked~.options .s2 span,
+    #content4 input[type="radio"]:nth-of-type(3):checked~.options .s3 span{
+        border:2px solid #AE7271;
+    }
+    #content4 input[type="radio"]:nth-of-type(1):checked~.options .s1 option,
+    #content4 input[type="radio"]:nth-of-type(2):checked~.options .s2 option,
+    #content4 input[type="radio"]:nth-of-type(3):checked~.options .s3 option{
+    	border-left: 2px solid #AE7271;
+    	border-right: 2px solid #AE7271;
+    }
+    #content4 input[type="radio"]:nth-of-type(1):checked~.options .s1 option:last-of-type,
+    #content4 input[type="radio"]:nth-of-type(2):checked~.options .s2 option:last-of-type,
+    #content4 input[type="radio"]:nth-of-type(3):checked~.options .s3 option:last-of-type{
+    	border-bottom:2px solid #AE7271;
+    }
+    #content4 .options .s1,.s2,.s3{ 	
+    	font:12px 'Microsoft YaHei';
+    	color:#a8aaaa;	
+    	width:235px;
+    	height:37px;
+    	float:left;
+    }
+    #content4 .options span{
+    	width:235px;
+    	height:36px;
+    	background-color:#fff;
+    	display:block;
+    	margin-top: -41px;
+    	line-height: 36px;
+    	text-indent: 2em;
+    }
+    #content4 .options .s2,.s3{
+    	margin-left: 28px;
+    }
+    #content4 .options .s1{
+    	margin-left: 150px;
+    }
+    #content4 .options .s2{
+    }
+    #content4 .options .s1 option,.s2 option,.s3 option{
+    	display:none;
+    	width:231px;
+    	height:25px;
+    	background-color:rgb(228,227,229);
+    	color:rgb(120,120,121);
+    	cursor:pointer;
+    	text-indent:2em;
+    	line-height: 25px;
+    }
+    #content4 .options .s1 option:hover,.s2 option:hover,.s3 option:hover{
+        background:url("icon-8.png") no-repeat 0px 3px,rgb(190,78,72);
+        color:white;
+    }
+    #content4 input[type="submit"]{
+    	width:235px;
+    	height:36px;
+    	font:14px 'Microsoft YaHei';
+    	color: #fff;
+    	text-align:center;
+    	position: absolute;
+    	margin-top: 200px;
+    	margin-right:120px;
+        letter-spacing: 20px;
+    	background-color: rgb(191,79,73);
+    	transition:background 1s;
+        -webkit-transition:background 1s;
+        -moz--transition:background 1s;
+    }
+    #content4 input[type="submit"]:hover{
+    	background-color:#8B1A1A;
+    }
+    #content5{
+        height:400px;
+        padding:100px 100px;
+        text-align: center;
+    }
+    #content5 .pic4{
+        height:400px;
+        width: 220px;
+        text-align:center;
+        float: left;
+        margin-right: 50px;
+    }
+    #content5 .pic4 img{
+        display: block;
+        padding:4px 2px;
+        border:1px solid rgb(217,217,218);
+        border-bottom-style: none;
+        width: 220px;
+        height: 310px;
+    }
+    #content5 .pic4 h3{
+        font-size: 14px;
+
+    }
+    #content5 .pic4 h1{
+    	font-size:20px;
+    	letter-spacing:30px;
+
+    }
+    #content5 .pic4 p{
+    	font-size:12px;
+    	color:rgb(136,136,137);
+    }
+    #content6{
+    	height: 560px;
+    	text-align: center;
+    }
+    #content6 .img{
+    	width: 850px;
+    	height: 560px;
+    	background:url(pic07.jpg) no-repeat;
+    	float:left;
+    	color: white;
+    	font-family: 'Microsoft YaHei';
+    	font-weight:200;
+    }
+    #content6 .img h1{
+    	font-size:50px;
+    	color: white;
+    }
+    #content6 .img h2{
+    	font-size: 158px;
+    }
+    #content6 .img h3{
+    	font-size: 22px;
+    	line-height: 30px;
+    }
+    #content6 h1{
+    	padding-top: 160px;
+    	font-size: 20px;
+        color: rgb(61,62,62);
+    }
+    #content6 h1 span{
+    	color: rgb(111,112,112);
+    }
+    #content6 h1 span span{
+    	color:rgb(244,173,172);
+    }
+    #content6 p{
+    	float:left;
+    	width:22em;
+    	letter-spacing:2px;
+    	margin:20px 66px;
+    	color: #aaaaaa;
+    	font-size: 12px;
+    	line-height: 30px;
+    }
+    #content6 button{
+    	margin-top: 50px;
+    	width:100px;
+    	height:35px;
+    	background: white;
+    	border:solid 1px rgb(229,104,107);
+    	font:12px;
+    	color:rgb(229,104,107);
+    	transition:background;
+    	-moz-transition:background; /* Firefox 4 */
+        -webkit-transition:background; /* Safari and Chrome */
+        -o-transition:background; /* Opera */
+    }
+    #content6 button:hover{
+        background-color: rgb(229,104,107);
+        border-radius:6px;
+        color: white;
+    }
+    #content7{
+    	height:520px;
+    	width:100%;
+    	font-size:21px;
+    	text-align: center;
+    }
+    #content7 .mode1,.mode2{
+    	width:33.2%;
+    	height:520px;
+    	float: left;
+    }
+    #content7 h3{
+    	margin-top: 150px;
+    }
+    #content7 .mode1{
+    	background:rgb(237,79,77);
+    	color: white;
+    }
+    #content7 .mode2{
+    	background:white;
+    	color:rgb(237,79,77);
+    }
+    #content7 .mode2 h3{
+        color:black;
+    }
+    #content7 .line1,.line2{
+    	margin:30px 190px;
+        width: 30px;
+        height:3px;
+    }
+    #content7 .mode1 .line1{
+        background-color: white;
+    } 
+    #content7 .mode2 .line2{
+        background-color: rgb(170,170,170);
+    }
+    #content7 button{
+        width:167px;
+        height:40px;
+        border:solid 1px; 
+        font:21px Arial; 
+    }
+    #content7 .mode1 button{
+        border-color:white;  
+        color: white;
+        background: rgb(237,79,77);
+        transition:background;
+    	-moz-transition:background; /* Firefox 4 */
+        -webkit-transition:background; /* Safari and Chrome */
+        -o-transition:background; /* Opera */
+    }
+    #content7 .mode2 button{
+    	border-color:rgb(237,79,77);
+    	color: rgb(237,79,77); 
+    	background:white;
+    	transition:background;
+    	-moz-transition:background; /* Firefox 4 */
+        -webkit-transition:background; /* Safari and Chrome */
+        -o-transition:background; /* Opera */
+    }
+    #content7 .mode1 button:hover{
+    	background-color:white;
+    	color:rgb(237,79,77);
+        border-radius:5px;
+    }
+    #content7 .mode2 button:hover{
+    	background-color:rgb(237,79,77);
+    	color:white;
+    	border-radius:5px;
+    }
+
+    #content7 img{
+    	width:425px;
+    	height:100%;
+    }
+    #content8{
+    	height: 750px;
+    }
+    #content8 .top{
+    	height: 280px;
+    	width: 100%;
+    	text-align: center;
+    }
+    #content8 .top h1{
+    	padding-top:100px;
+    	font:21px/40px 'Microsoft YaHei';
+    	color:#323333;
+    }
+    #content8 .top h1 span{
+    	display:inline-block;
+    	border-bottom:solid  rgb(235,102,100);
+    	border-bottom-width:20px 1px;
+
+    }
+    #content8 .top h2{
+    	margin-top: 15px;
+    	font:12px/15px 'Microsoft YaHei';
+    	color: #aaaaaa;
+    }
+    #content8 .left{
+        width: 290px;
+        margin-left:140px; 
+        display: inline-block;
+    }
+    #content8 .left .mode{
+        float: left;
+        color:rgb(132,125,124);
+    }
+    #content8 .left h1{
+    	font:14px 'Microsoft YaHei';
+    	color: #231815;  	
+    	margin-bottom: 20px;
+    }
+    #content8 .left p{
+    	font:12px/20px 'SongTi';
+    }
+    #content8 .left blockquote{
+    	font:normal 12px/20px 'SongTi'; 
+        cursor:pointer;
+        float: right;
+    }
+    #content8 .right{
+    	color:#564e4c;
+    	font:12px 'SongTi';
+    	width: 700px;
+    	height: 400px;
+    	display: inline-block;
+    }
+    #content8 .right input[type="text"],textarea,input[type="submit"]{
+    	margin-left:20px;
+    	border-style: none;
+    	background-color: rgb(237,237,237);
+    }
+    #content8 .right input[type="text"]{
+    	padding-left: 20px;
+    	width:300px;
+    	height:40px;
+    	margin-bottom: 20px;
+    }
+    #content8 .right textarea{
+    	padding:5px 20px;
+    	width: 620px;
+    	margin-bottom: 20px;
+    }
+    #content8 .right input[type="text"]:focus,textarea:focus{
+     	background-color: #fff;
+     	border:solid 1px rgb(237,237,237);
+     }
+    #content8 .right input[type="submit"]{
+    	width:660px;
+    	height:40px;
+    	color: #231815;
+    }
+    #content9{
+    	height: 360px;
+    	background: rgb(50,53,62);
+    	text-align: center;
+    	color: white;
+    } 
+    #content9 h1{
+    	font:21px 'Microsoft YaHei';
+    	padding-top: 80px;
+    }
+    #content9 h2{
+    	font:12px/20px 'SongTi';
+    	padding-top: 10px;
+    }
+    #content9 input[type="email"]{
+        margin-top: 19px;
+    	width:430px;
+    	height:40px;
+    	padding:0px;
+    }
+    #content9 button{  	
+    	padding-bottom:4px;
+    	width:80px;
+    	height:44px;
+    	font:15px 'Microsoft YaHei';
+    	background-color:rgb(112,114,120);
+    	border:0px;
+    	color:white;
+    	letter-spacing:6px;
+    	margin-left:-5px;
+    }
+    footer{
+    	margin-top: -25px;
+    	height: 55px;
+    	background-color: rgb(47,48,56);
+    	color: white;
+    }
+    footer p{
+    	margin: 25px 95px;
+    	display:inline-block;   	
+    	font:12px 'SongTi';
+    }
+    footer a{
+    	display:inline-block;
+    	font:12px 'SongTi';
+    	text-decoration: none;
+    	color: white;
+    	float: right;
+    	margin-top: 25px;
+    	margin-right:40px;
+    }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+        <header>
+    	    <div class="left"><img src="topic_left.png"><h1>新世界</h1></div>
+    	    <ul>
+              <li><img src="topic_right.png">登录</li>
+              <li>关于我们</li>
+              <li>爱心社区</li>
+              <li>项目介绍</li>
+              <li>最新活动</li>
+              <li>首页</li>
+              <li class="move"></li>
+    	    </ul>
+    	</header>
+    	<div id="content1">
+    	    <div class="content1_word">
+    	      <h1>Time of new life</h1>
+    	      <h2>新时代，年轻的人们让我们一起体验新生活，享受新生活</h2>
+    	      <button type="button" onclick="" c class="button1">开始体验</button>
+    	    </div>  	   
+    	</div>
+    	<div id="content2">
+    	    <div class="content2_item">
+    	    <img src="icon-1.jpg">
+    	    <p>打造全新世界观，让你更爱你的生活</p>
+    	    </div>
+    	    <div class="content2_item">
+    	    <img src="icon-2.jpg">
+    	    <p>丰富多彩的公益活动，发挥新世界的主人公意识</p>
+    	    </div>
+    	    <div class="content2_item">
+    	    <img src="icon-3.jpg">
+    	    <p>时尚的新理念，超前体验位置的生活</p>
+    	    </div>
+    	    <div class="content2_item">
+    	    <img src="icon-4.jpg">
+    	    <p>完善的培养机制，培养你全新的世界观</p>
+    	    </div>   		
+    	</div>
+    	<div id="content3">
+    	    <img src="booklogo.png">
+    	    <p>关于新世界，你不知道的还有什么？</p>
+    	</div>
+    	<div id="content4">
+    	    <div class="under">
+    	    </div>
+    	    <div class="topic">
+    	          <h1>查找新世界<span>城</span>市活动信息</h1>
+    	          <h2>每个城市的有不同的活动信息，请自主查询您所需要了解的城市</h2>
+    	    </div>
+    	    <input type="radio" name="select"></input>
+    	    <input type="radio" name="select"></input>
+    	    <input type="radio" name="select"></input>
+    	    <input type="submit" value="搜索"></input>
+    	    <div class="options">
+    	      <div class="s1">
+    	        <span>国家</span>
+    	    	<option>中国</option>
+    	    	<option>美国</option>
+    	      </div>
+    	      <div class="s2">
+    	        <span>省份</span> 
+    	    	<option>北京</option>
+    	    	<option>上海</option>
+    	    	<option>广东</option>
+    	    	<option>辽宁</option>
+    	    	<option>陕西</option>
+    	      </div> 
+    	      <div class="s3">
+    	        <span>城市</span>
+    	        <option>西安</option>
+    	        <option>宝鸡</option>
+    	      </div>
+    	    </div> 
+    	</div>
+    	<div id="content5">
+    	    <div class="pic4">
+    	      <img src="pic03.jpg">
+    	      <h3>北京活动</h3>
+    	      <p>新社区大联盟</p>
+    	    </div>
+    	    <div class="pic4">
+    	      <h1>上海活动</h1>
+    	      <p>夜上海景观搜索</p>
+    	      <img src="pic04.jpg">
+    	    </div>
+    	    <div class="pic4">
+    	      <img src="pic05.jpg">
+    	      <h3>深圳活动</h3>
+    	      <p>全新海岸线观点站</p>
+    	    </div>
+    	    <div class="pic4">
+    	      <img src="pic06.jpg">
+    	      <h3>香港活动</h3>
+    	      <p>奢侈消费大派送</p>
+    	    </div>
+    	</div>
+    	<div id="content6">
+    	    <div class="img">
+    	    	<h1>新世界</h1>
+    	    	<h2>TIME</h2>
+    	    	<h3>@新世界 - 北京<br/>2016.04.01</h3>
+    	    </div>
+    		<h1>新世界<span>/<span>01</span></span></h1>
+    		<p>新世界是个新世界新世界是个新世界新世界是个新世界新世界是个新世界新世界是个新世界新世界是个新世界新世界是个新世界新世界是个新世界新世界是个新世界新世界是个新世界新世界是个新世界</p>
+    		<button>更多详情</button><br/><br/>
+    		<label><input name="Pages" type="radio" value="1"></label>
+    		<label><input name="Pages" type="radio" value="1"></label>
+    		<label><input name="Pages" type="radio" value="1"></label>
+    	</div>
+    	<div id="content7">
+    		<div class="mode1">
+    			<h3>新时代<br/>关于爱生活的我们</h3>
+    			<div class="line1"></div>
+    			<button>查看更多</button>
+    		</div>
+    		<div class="mode2">
+    			<h3>新时代<br/>关于爱生活的我们</h3>
+    			<div class="line2"></div>
+    			<button>查看更多</button>
+    		</div>
+    		<img src="pic08.jpg">
+    	</div>
+    	<div id="content8">
+    	     <div class="top">
+    	         <h1>成为我<span>们的</span>志愿者</h1>
+    	         <h2>新世界的大家庭需要每一个爱生活的人的加入，如果你够年轻，有梦想，有激情<br/>那就不要犹豫，快来加入我们，成为改变所有人生活的人</h2>
+    	     </div>
+    	     <div class="left">
+    	        <div class="mode">
+    	     	   <h1>新世界志愿者协议</h1>
+    	     	   <p>加入新世界志愿者的人员必须遵守中华人民共共和国的相关法律法规，并且本着平等资源的原则 ......</p>
+    	     	   <blockquote>∨ more</blockquote>
+    	     	</div>
+    	     	<div class="mode">
+    	     	   <h1>新世界志愿者协议</h1>
+    	     	   <p>新世界志愿者享受新世界内部所有资源共享的权利，并且享受所在四新世界活动的优先参与资格</p>
+    	     	   <blockquote>∨ more</blockquote>
+    	     	</div>
+    	     	<div class="mode">
+    	     	   <h1>更多条款</h1><p>................................................ </p><blockquote>∨ more</blockquote>
+    	     	</div>
+    	     </div>
+    	     <div class="right">
+    	      <form>
+    	        <input type="text" placeholder="姓名：">
+    	        <input type="text" placeholder="年龄：">
+    	        <input type="text" placeholder="联系方式：">
+    	        <input type="text" placeholder="联系地址：">
+    	        <textarea cols="30" rows="10"placeholder="请简单描述您梦想的生活："></textarea>
+    	        <input type="submit" value="提交申请">
+    	      </form>
+    	     </div>
+    	</div>
+    	<div id="content9">
+    		<h1>联系我们</h1>
+    		<h2>为了更好的获取我们最新的产品资讯，您可以留下您的电子邮箱快速订阅我们的产品资讯<br>也可以通过以下任何方式关注我们动态</h2>
+    		<input type="email" placeholder="  someone@email.com"></input>
+    		<button>提交</button>
+    		<ul>
+    			<img>
+    		</ul>
+    	</div>
+    	<footer>
+    		<p>2016新世界</p>
+    		<a href="#top">Back to top</a>
+    	</footer>
+
+    </div>
+
+  </body>
